@@ -1,0 +1,37 @@
+/*Image*/
+.careers-header {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(3, 3, 3, 0.6),
+      rgba(7, 7, 7, 0.6)
+    ),
+    url("../assets/images/careers.jpg");
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+}
+
+.career-info {
+  padding: 4rem;
+}
+
+/*Centered Text*/
+.container {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: Segoe UI;
+  font-size: 41;
+}

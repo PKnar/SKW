@@ -1,0 +1,231 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+  }
+
+:root {
+   --black: #171717;
+   --white: #ffff;
+   --accentBright: #e8c3a9;
+   --accentDark: #b08363;
+   --lightButton: #F5F5F5;
+   --lightGray: #9E9E9E;
+   --blogText: #6A6680;
+   --headerBackgroundColor: #1a1a1b;
+  }
+
+body{
+  font-family: "Montserrat", sans-serif;
+}
+
+.imageBlog{
+  width: 300px;
+  height: 280px;
+}
+
+
+/*navigation bar*/
+header img{
+  width: 150px;
+}
+
+.nav-container{
+  position: relative;
+}
+
+.nav-container a {
+  text-decoration: none;
+  color: var(--white);
+}
+
+header{
+  display: flex;
+  justify-content: space-between;
+  padding: 30px;
+}
+
+ul{
+  display: flex;
+}
+
+ul a{
+  display: block;
+  padding: 11px 20px;
+}
+
+ul li{
+  list-style: none;
+}
+
+.navIcons{
+  padding: 10px;
+}
+
+.navIcons a{
+  padding: 0 5px;
+}
+
+/*Hero page*/
+.hero{
+  background:linear-gradient(rgba(0, 0, 0, 0.570), rgba(0, 0, 0, 0.570)), url(../assets/images/blog-bg-crop.jpg);
+  background-size:cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  position: relative;
+}
+
+
+.textContent{
+  position: relative;
+  text-align: left;
+  padding:  70px 0;
+}
+
+.dateHeroPage{
+  padding: 20px 45px;
+  color: #9E9E9E;
+  font-size: 20px;
+}
+
+.textContent h1{
+  font-size: 36px;
+  padding: 10px 45px;
+}
+
+.textContent p{
+  font-size: 16px;
+  padding: 20px 45px;
+}
+
+.readMore{
+  padding: 10px 0 0 45px;
+  text-decoration: none;
+  color: var(--accentBright);
+}
+
+.arrowIcon{
+  padding: 20px 0 0 20px;
+}
+
+/*glass effect box*/
+
+.transparentBox{
+  position: absolute;
+  bottom: 0px;
+  padding: 50px 0;
+  background:rgba(0, 0, 0, 0.404);
+  width: 100%;
+  backdrop-filter: blur(5px);
+  display: flex;
+  height: 160px;
+}
+
+.popularLeft{
+  padding: 0 0 0px 45px;
+}
+
+.popularLeft h1{
+  font-size: 17px;
+  text-transform: uppercase;
+  padding-bottom: 20px;
+}
+
+.popularLeft p{
+  font-size: 16px;
+  color: #A1A1A1;
+}
+
+.newsRight{
+  position: relative;
+  left: 950px;
+  padding-right: 20px;
+}
+
+.newsRight h1{
+  font-size: 17px;
+  text-transform: uppercase;
+  padding-bottom: 5px;
+}
+
+.newsRight p{
+  font-size: 16px;
+  color: #A1A1A1;
+  padding-bottom: 10px;
+}
+.newsRight a{
+  color: var(--accentBright);
+  text-decoration: none;
+}
+
+/*the blogs part of the page*/
+
+.blogPage{
+  height: 100vh;
+  padding: 20px 45px;
+}
+
+.blogsDisplay{
+  display: flex;
+  flex-wrap: wrap;
+  padding: 100px 45px 0;
+}
+
+.singleBlog{
+   width: 30%;
+   box-sizing: border-box;
+   margin: 10px 0 0 2%;
+   height: 100%;
+   padding: 0 0 100px 0;
+ 
+}
+
+.imageBlog{
+  width: 400px;
+  object-fit: cover;
+}
+
+.dateBlog{
+  color: var(--lightGray);
+  font-size: 12px;
+  padding-top: 20px;
+}
+
+.singleBlog h6{
+  font-size: 10px;
+  color: var(--lightGray);
+}
+
+.singleBlog p{
+  color: var(--blogText);
+  font-size: 16px;
+  padding: 18px 0 20px 0;
+}
+
+.singleBlog a{
+  color: var(--accentDark);
+  text-decoration: none;
+}
+
+.numberedButtons{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  padding-top: 50px;
+}
+
+button{
+  padding: 0 20px;
+  border: none;
+  background-color: white;
+  color: var(--black);
+}
+
+.circleButton{
+  border-radius: 50%;
+  background-color: var(--lightButton);
+  font-size: 15px;
+}
+
+

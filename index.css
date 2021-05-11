@@ -1,0 +1,323 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --black: #171717;
+  --white: #ffff;
+  --accentBright: #e8c3a9;
+  --accentDark: #a26e4a;
+  --headerBackgroundColor: #1a1a1b;
+  --boxShadow: -1px 7px 5px 0px rgba(58, 58, 58, 0.1);
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+ul {
+  list-style: none;
+}
+
+/* nav */
+
+nav {
+  display: flex;
+  width: 100%;
+  height: 100px;
+  align-items: center;
+  position: fixed;
+  background-color: transparent;
+  transition: 0.5s;
+  z-index: 99999;
+}
+
+.scrolled {
+  background-color: var(--black);
+  transition: 0.5s;
+}
+
+.desktop-nav {
+  display: flex;
+  width: 100%;
+  height: 100px;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.logo {
+  width: 120px;
+}
+
+.nav-icons img {
+  width: 15px;
+}
+
+.nav-links {
+  display: flex;
+}
+
+.nav-icons {
+  display: flex;
+}
+
+.desktop-nav a {
+  color: var(--white);
+  text-decoration: none;
+  font-size: 13px;
+}
+
+.desktop-nav li {
+  margin-right: 1rem;
+}
+
+/* ------------- */
+
+.active {
+  border-bottom: 1px solid var(--accentBright);
+  padding-bottom: 0.3rem;
+}
+
+.mobile-nav {
+  display: none;
+}
+
+@media (max-width: 900px) {
+  .desktop-nav {
+    display: none;
+  }
+
+  .mobile-nav {
+    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 1rem;
+    position: relative;
+    top: 0;
+  }
+
+  .nav-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    width: 300px;
+    height: 100vh;
+    background-color: var(--white);
+    position: fixed;
+    right: 0;
+    top: 0;
+    box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.12);
+    z-index: 9998;
+  }
+
+  .nav-links li {
+    margin: 0.8rem;
+  }
+
+  .nav-links a {
+    color: var(--black);
+    text-decoration: none;
+  }
+
+  .nav-icons {
+    flex-direction: column;
+  }
+
+  .nav-icons li {
+    margin-bottom: 1rem;
+  }
+
+  .container-column {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    align-items: center;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+  }
+
+  .burger-menu {
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    z-index: 999999;
+  }
+
+  .line {
+    height: 2px;
+    background-color: var(--white);
+    margin: 0.3rem 0;
+    transition: 1s;
+  }
+
+  .top-line {
+    width: 30px;
+  }
+
+  .middle-line {
+    width: 20px;
+    margin-left: 10px;
+  }
+
+  .bottom-line {
+    width: 30px;
+  }
+
+  .deg45 {
+    transform: rotate(45deg);
+    position: relative;
+    top: -14px;
+  }
+
+  .deg-45 {
+    transform: rotate(-45deg);
+  }
+
+  .transparent-line {
+    opacity: 0;
+  }
+
+  .close {
+    transform: translateX(300px);
+    transition: 1s;
+  }
+
+  .show {
+    transform: translate(0);
+    transition: 1s;
+  }
+
+  .black {
+    background-color: var(--black);
+  }
+}
+
+/* Footer */
+
+footer {
+  background-color: var(--headerBackgroundColor);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 3rem;
+  color: rgb(218, 218, 218);
+}
+
+footer a {
+  color: grey;
+}
+
+.footer-message {
+  margin: 2rem;
+  font-size: 12px;
+}
+
+.socials {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+footer hr {
+  color: grey;
+  width: 250px;
+}
+
+.socials img {
+  width: 15px;
+  margin: 0.5rem;
+}
+
+.socials p {
+  font-size: 12px;
+  text-transform: uppercase;
+  margin-left: 0.5rem;
+}
+
+.footer-contact p {
+  font-size: 12px;
+  margin: 0.5rem;
+}
+
+.footer-contact a {
+  margin-left: 0.5rem;
+}
+
+.footer-logo {
+  width: 150px;
+}
+
+.footer-contact {
+  display: flex;
+  align-items: center;
+}
+
+.footer-contact img {
+  width: 30px;
+  margin-right: 1rem;
+}
+
+footer .flex-row {
+  display: flex;
+  align-items: center;
+}
+
+.vertical-line {
+  height: 50px;
+  background-color: white;
+  width: 1px;
+  margin: 1rem;
+}
+
+.container-row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.footer-links {
+  margin: 3rem 2rem;
+  min-width: 250px;
+}
+
+.footer-links li {
+  margin-top: 0.5rem;
+  font-size: 13px;
+}
+
+.payments {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  width: 100%;
+  justify-content: center;
+  padding: 2rem;
+  margin-top: 6rem;
+}
+
+.payments a {
+  color: black;
+  margin-right: 2rem;
+  font-size: 13px;
+}
+
+.payment-icons {
+  display: flex;
+  align-items: center;
+}
+
+.payment-icons img {
+  width: 30px;
+  margin: 0.3rem;
+}
+
+.rating {
+  width: 300px;
+  margin-top: 3 rem;
+}
