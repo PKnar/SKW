@@ -5,7 +5,7 @@
     <div class="desktop-nav">
     <img class="logo" alt='Saunakoning logo' src='./assets/logo/white.png' />
     <ul class="nav-links ">
-        <li><a class="active" href="/">Home </a></li>
+        <li><a class="active" href="/index.html">Home </a></li>
         <li><a href="#">Acties </a></li>
         <li><a href="#">Webshop </a></li>
         <li><a href="#"> Sauna Info</a></li>
