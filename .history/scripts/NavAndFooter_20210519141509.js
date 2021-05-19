@@ -1,6 +1,6 @@
 (function () {
   let navLinks = [
-    { path: "", name: "Home" },
+    { path: "/", name: "Home" },
     { path: "blogs.html", name: "Blog" },
   ];
 
