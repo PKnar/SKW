@@ -4,7 +4,7 @@
     { path: "#", name: "Webshop" },
     { path: "#", name: "Sauna Info" },
     { path: "#", name: "Showrooms" },
-    { path: "/blogs.html", name: "Blog" },
+    { path: "blogs.html", name: "Blog" },
   ];
 
   let baseURL = "https://pknar.github.io/SKW";
