@@ -5,8 +5,6 @@
     { path: "#", name: "Sauna Info" },
     { path: "#", name: "Showrooms" },
     { path: "blogs.html", name: "Blog" },
-    { path: "about.html", name: "About" },
-    { path: "#", name: "Wij Verkopen ook" },
   ];
 
   let baseURL = "https://pknar.github.io/SKW/";
@@ -18,7 +16,7 @@
     <img class="logo" alt='Saunakoning logo' src='./assets/logo/white.png' />
     <ul class="nav-links ">
 
-    ${navLinks.map((link) => {
+    ${navLinks.forEach((link) => {
       return ` <li><a href="${baseURL}${link.path}">${link.name} </a></li>`;
     })}
    
