@@ -79,8 +79,6 @@
 
         </div>`;
 
-    nav.innerHTML += mobileNav;
-
     //     let html = `
     //     <div class="desktop-nav">
     //     <img class="logo" alt='Saunakoning logo' src='./assets/logo/white.png' />

@@ -79,7 +79,7 @@
 
         </div>`;
 
-    nav.innerHTML += mobileNav;
+    desktopNav.innerHTML += mobileNav;
 
     //     let html = `
     //     <div class="desktop-nav">
