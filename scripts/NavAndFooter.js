@@ -16,8 +16,8 @@
     <img class="logo" alt='Saunakoning logo' src='./assets/logo/white.png' />
     <ul class="nav-links ">
 
-    ${navLinks.map((link) => {
-      return ` <li><a href="${baseURL}/${link.path}">${link.name} </a></li>`;
+    ${navLinks.forEach((link) => {
+      return ` <li><a href="${baseURL}/${link.path}">${link.name} </a></li>`
     })}
    
     </ul>
