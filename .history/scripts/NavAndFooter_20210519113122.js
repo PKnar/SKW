@@ -10,10 +10,10 @@
         <li><a href="#">Webshop </a></li>
         <li><a href="#"> Sauna Info</a></li>
         <li><a href="#">Showrooms </a></li>
-        <li><a href="./blogs.html">Blog </a></li>
-        <li><a href="./about.html">About </a></li>
+        <li><a href="/blogs.html">Blog </a></li>
+        <li><a href="/about.html">About </a></li>
         <li><a href="#">Contact </a></li>
-        <li><a href="./careers.html">Wij verkopen ook</a></li>
+        <li><a href="/careers.html">Wij verkopen ook</a></li>
     </ul>
 
     <ul class="nav-icons">
