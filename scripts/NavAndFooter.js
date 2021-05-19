@@ -4,10 +4,10 @@
     { path: "#", name: "Webshop" },
     { path: "#", name: "Sauna Info" },
     { path: "#", name: "Showrooms" },
-    { path: "/blogs.html", name: "Blog" },
+    { path: "blogs.html", name: "Blog" },
   ];
 
-  let baseURL = "https://pknar.github.io/SKW/";
+  let baseURL = "https://pknar.github.io/SKW";
 
   function generateNav() {
     let nav = document.querySelector("nav");
@@ -17,7 +17,7 @@
     <ul class="nav-links ">
 
     ${navLinks.map((link) => {
-      return ` <li><a href="${baseURL}${link.path}">${link.name} </a></li>`;
+      return ` <li><a href="${baseURL}/${link.path}">${link.name} </a></li>`;
     })}
    
     </ul>
