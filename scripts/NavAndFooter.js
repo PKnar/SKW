@@ -7,7 +7,7 @@
     { path: "/blogs.html", name: "Blog" },
   ];
 
-  let baseURL = "https://pknar.github.io/SKW";
+  let baseURL = "https://pknar.github.io/SKW/";
 
   function generateNav() {
     let nav = document.querySelector("nav");
