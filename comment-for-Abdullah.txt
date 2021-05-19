@@ -1,0 +1,5 @@
+1. Use semantic tags 
+2. use % for parent divs, 100%
+3.remove unnecessary css
+4. Reference page Design - base it on Blogs page
+ 

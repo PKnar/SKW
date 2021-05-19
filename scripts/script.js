@@ -1,5 +1,6 @@
-(function () {
+function main() {
   "use strict";
+  console.log("window reloaded");
 
   /* Navogation -change backgroun on scroll */
   window.addEventListener("scroll", (event) => {
@@ -31,5 +32,9 @@
     bottomLine.classList.toggle("black");
   };
 
-  burgerMenu.addEventListener("click", (e) => handleMobileNavClick(e));
-})();
+  if (burgerMenu) {
+    burgerMenu.addEventListener("click", (e) => handleMobileNavClick(e));
+  }
+}
+
+window.addEventListener("load", main);

@@ -9,12 +9,18 @@
   --white: #ffff;
   --accentBright: #e8c3a9;
   --accentDark: #a26e4a;
+  --homepageButton: #694c38;
   --headerBackgroundColor: #1a1a1b;
   --boxShadow: -1px 7px 5px 0px rgba(58, 58, 58, 0.1);
+
+  --silver: #c2c0c0;
+  --yellow: #e4c461;
+  --shark: #25262a;
 }
 
 body {
   font-family: "Montserrat", sans-serif;
+  overflow-x: hidden;
 }
 
 ul {
@@ -44,7 +50,7 @@ nav {
   width: 100%;
   height: 100px;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: space-around;
 }
 
 .logo {
@@ -90,14 +96,17 @@ nav {
   }
 
   .mobile-nav {
-    display: block;
     display: flex;
     align-items: center;
     justify-content: space-between;
     width: 100%;
     padding: 1rem;
     position: relative;
-    top: 0;
+    padding: 2rem;
+  }
+
+  .mobile-logo {
+    width: 120px;
   }
 
   .nav-links {
@@ -125,12 +134,8 @@ nav {
     text-decoration: none;
   }
 
-  .nav-icons {
-    flex-direction: column;
-  }
-
   .nav-icons li {
-    margin-bottom: 1rem;
+    margin-right: 0.5rem;
   }
 
   .container-column {
@@ -138,9 +143,6 @@ nav {
     flex-direction: column;
     position: relative;
     align-items: center;
-    position: absolute;
-    right: 20px;
-    top: 20px;
   }
 
   .burger-menu {

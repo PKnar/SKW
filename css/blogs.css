@@ -1,231 +1,342 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    color: white;
-  }
-
-:root {
-   --black: #171717;
-   --white: #ffff;
-   --accentBright: #e8c3a9;
-   --accentDark: #b08363;
-   --lightButton: #F5F5F5;
-   --lightGray: #9E9E9E;
-   --blogText: #6A6680;
-   --headerBackgroundColor: #1a1a1b;
-  }
-
-body{
-  font-family: "Montserrat", sans-serif;
-}
-
-.imageBlog{
+.imageBlog {
   width: 300px;
   height: 280px;
 }
 
-
 /*navigation bar*/
-header img{
+header img {
   width: 150px;
 }
 
-.nav-container{
-  position: relative;
-}
-
-.nav-container a {
-  text-decoration: none;
-  color: var(--white);
-}
-
-header{
-  display: flex;
-  justify-content: space-between;
-  padding: 30px;
-}
-
-ul{
-  display: flex;
-}
-
-ul a{
-  display: block;
-  padding: 11px 20px;
-}
-
-ul li{
-  list-style: none;
-}
-
-.navIcons{
-  padding: 10px;
-}
-
-.navIcons a{
-  padding: 0 5px;
-}
-
 /*Hero page*/
-.hero{
-  background:linear-gradient(rgba(0, 0, 0, 0.570), rgba(0, 0, 0, 0.570)), url(../assets/images/blog-bg-crop.jpg);
-  background-size:cover;
+.hero {
+  background: linear-gradient(rgba(0, 0, 0, 0.57), rgba(0, 0, 0, 0.57)),
+    url(../assets/images/blog-bg-crop.jpg);
+  background-size: cover;
   background-repeat: no-repeat;
   height: 100vh;
   position: relative;
+  color: white;
 }
 
-
-.textContent{
+.textContent {
   position: relative;
   text-align: left;
-  padding:  70px 0;
+  padding: 70px 0;
 }
 
-.dateHeroPage{
+.dateHeroPage {
   padding: 20px 45px;
-  color: #9E9E9E;
+  color: #9e9e9e;
   font-size: 20px;
 }
 
-.textContent h1{
+.textContent h1 {
   font-size: 36px;
   padding: 10px 45px;
 }
 
-.textContent p{
+.textContent p {
   font-size: 16px;
   padding: 20px 45px;
 }
 
-.readMore{
+.readMore {
   padding: 10px 0 0 45px;
   text-decoration: none;
   color: var(--accentBright);
 }
 
-.arrowIcon{
+.arrowIcon {
   padding: 20px 0 0 20px;
 }
 
 /*glass effect box*/
 
-.transparentBox{
+.transparentBox {
   position: absolute;
   bottom: 0px;
   padding: 50px 0;
-  background:rgba(0, 0, 0, 0.404);
+  background: rgba(0, 0, 0, 0.404);
   width: 100%;
-  backdrop-filter: blur(5px);
   display: flex;
   height: 160px;
 }
 
-.popularLeft{
+.popularLeft {
   padding: 0 0 0px 45px;
 }
 
-.popularLeft h1{
+.popularLeft h1 {
   font-size: 17px;
   text-transform: uppercase;
   padding-bottom: 20px;
 }
 
-.popularLeft p{
+.popularLeft p {
   font-size: 16px;
-  color: #A1A1A1;
+  color: #a1a1a1;
 }
 
-.newsRight{
+.dots {
+  padding: 15px 0;
+}
+
+.dot1 {
+  height: 10px;
+  width: 10px;
+  background-color: #efc862;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.dot {
+  height: 10px;
+  width: 10px;
+  background-color: #646464;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.newsRight {
   position: relative;
   left: 950px;
   padding-right: 20px;
 }
 
-.newsRight h1{
+.newsRight h1 {
   font-size: 17px;
   text-transform: uppercase;
   padding-bottom: 5px;
 }
 
-.newsRight p{
+.newsRight p {
   font-size: 16px;
-  color: #A1A1A1;
+  color: #a1a1a1;
   padding-bottom: 10px;
 }
-.newsRight a{
+.newsRight a {
   color: var(--accentBright);
   text-decoration: none;
 }
 
 /*the blogs part of the page*/
 
-.blogPage{
+.blogPage {
   height: 100vh;
   padding: 20px 45px;
 }
 
-.blogsDisplay{
+.blogsDisplay {
   display: flex;
   flex-wrap: wrap;
   padding: 100px 45px 0;
+  height: 100vh;
 }
 
-.singleBlog{
-   width: 30%;
-   box-sizing: border-box;
-   margin: 10px 0 0 2%;
-   height: 100%;
-   padding: 0 0 100px 0;
- 
+.singleBlog {
+  width: 30%;
+  box-sizing: border-box;
+  margin: 10px 0 0 2%;
+  height: 100%;
+  padding: 0 0 100px 0;
 }
 
-.imageBlog{
+.textOverPic {
+  position: relative;
+}
+
+.textBlock {
+  position: absolute;
+  top: 110px;
+  left: 75px;
+  color: white;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.textBlock h2 {
+  text-align: center;
+}
+
+.imageBlog {
   width: 400px;
   object-fit: cover;
+  filter: brightness(45%);
 }
 
-.dateBlog{
+.dateBlog {
   color: var(--lightGray);
   font-size: 12px;
   padding-top: 20px;
 }
 
-.singleBlog h6{
+.singleBlog h6 {
   font-size: 10px;
   color: var(--lightGray);
 }
 
-.singleBlog p{
+.singleBlog p {
   color: var(--blogText);
   font-size: 16px;
   padding: 18px 0 20px 0;
 }
 
-.singleBlog a{
+.singleBlog a {
   color: var(--accentDark);
   text-decoration: none;
 }
 
-.numberedButtons{
+.numberedButtons {
   position: relative;
   display: flex;
   justify-content: center;
   padding-top: 50px;
 }
 
-button{
+button {
   padding: 0 20px;
   border: none;
   background-color: white;
   color: var(--black);
+  cursor: pointer;
 }
 
-.circleButton{
+.circleButton {
   border-radius: 50%;
   background-color: var(--lightButton);
   font-size: 15px;
+  height: 40px;
+  width: 45px;
+  margin: 0 10px;
 }
 
+/* Footer */
 
+footer {
+  background-color: var(--headerBackgroundColor);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 3rem;
+  color: rgb(218, 218, 218);
+  margin-top: 800px;
+}
+
+footer a {
+  color: grey;
+}
+
+.footer-message {
+  margin: 2rem;
+  font-size: 12px;
+}
+
+.socials {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+footer hr {
+  color: grey;
+  width: 250px;
+}
+
+.socials img {
+  width: 15px;
+  margin: 0.5rem;
+}
+
+.socials p {
+  font-size: 12px;
+  text-transform: uppercase;
+  margin-left: 0.5rem;
+}
+
+.footer-contact p {
+  font-size: 12px;
+  margin: 0.5rem;
+}
+
+.footer-contact a {
+  margin-left: 0.5rem;
+}
+
+.footer-logo {
+  width: 150px;
+}
+
+.footer-contact {
+  display: flex;
+  align-items: center;
+}
+
+.footer-contact img {
+  width: 30px;
+  margin-right: 1rem;
+}
+
+footer .flex-row {
+  display: flex;
+  align-items: center;
+}
+
+.vertical-line {
+  height: 50px;
+  background-color: white;
+  width: 1px;
+  margin: 1rem;
+}
+
+.container-row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.footer-links {
+  margin: 3rem 2rem;
+  min-width: 250px;
+}
+
+.footer-links li {
+  margin-top: 0.5rem;
+  font-size: 13px;
+}
+
+.payments {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  width: 100%;
+  justify-content: center;
+  padding: 2rem;
+  margin-top: 6rem;
+}
+
+.payments a {
+  color: black;
+  margin-right: 2rem;
+  font-size: 13px;
+}
+
+.payment-icons {
+  display: flex;
+  align-items: center;
+}
+
+.payment-icons img {
+  width: 30px;
+  margin: 0.3rem;
+}
+
+.rating {
+  width: 300px;
+}
+
+.hero {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}

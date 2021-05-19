@@ -24,7 +24,6 @@
     <a>Meer  </a>
     <img src='./assets/icons/arrows/dark-arrow.png' />
     </div>
-  
        </div>`;
 
       blogList.innerHTML += html;
