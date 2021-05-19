@@ -1,7 +1,7 @@
 (function () {
   let navLinks = [
-    { path: "/", name: "Home" },
-    { path: "/blogs.html", name: "Blog" },
+    { path: "index.html", name: "Home" },
+    { path: "blogs.html", name: "Blog" },
   ];
 
   let baseURL = "https://pknar.github.io/SKW/";
@@ -14,7 +14,7 @@
     <ul class="nav-links ">
 
     ${navLinks.map((link) => {
-      return ` <li><a href=" ${baseURL}${link.path}">${link.name} </a></li>`;
+      return ` <li><a href=" ${baseURL}/${link.path}">${link.name} </a></li>`;
     })}
    
     </ul>

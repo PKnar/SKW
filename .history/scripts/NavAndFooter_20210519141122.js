@@ -1,7 +1,7 @@
 (function () {
   let navLinks = [
-    { path: "/", name: "Home" },
-    { path: "/blogs.html", name: "Blog" },
+    { path: "index.html", name: "Home" },
+    { path: "blogs.html", name: "Blog" },
   ];
 
   let baseURL = "https://pknar.github.io/SKW/";

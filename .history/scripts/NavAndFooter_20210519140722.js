@@ -1,8 +1,5 @@
 (function () {
-  let navLinks = [
-    { path: "/", name: "Home" },
-    { path: "/blogs.html", name: "Blog" },
-  ];
+  let navLinks = [{ path: "blogs.html", name: "Blog" }];
 
   let baseURL = "https://pknar.github.io/SKW/";
 
@@ -12,9 +9,10 @@
     <div class="desktop-nav">
     <img class="logo" alt='Saunakoning logo' src='./assets/logo/white.png' />
     <ul class="nav-links ">
+    <li><a class="active" href="/">Home </a></li>
 
     ${navLinks.map((link) => {
-      return ` <li><a href=" ${baseURL}${link.path}">${link.name} </a></li>`;
+      return ` <li><a href=" ${baseURL}/${link.path}">${link.name} </a></li>`;
     })}
    
     </ul>
