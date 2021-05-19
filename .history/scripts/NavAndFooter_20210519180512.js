@@ -1,5 +1,5 @@
 (function () {
-  let navigation = [
+  let navLinks = [
     { path: "", name: "Home" },
     { path: "#", name: "Webshop" },
     { path: "#", name: "Sauna Info" },
@@ -12,7 +12,6 @@
   let baseURL = "https://pknar.github.io/SKW";
 
   function generateNav() {
-    console.log("generating");
     let nav = document.querySelector("nav");
     let desktopNav = document.createElement("div");
     let navLinks = document.createElement("ul");
@@ -20,18 +19,17 @@
     desktopNav.setAttribute("class", "desktop-nav");
     navLinks.setAttribute("class", "nav-links");
 
-    navigation.map((link) => {
+    desktopNav.appendChild(navLinks);
+    nav.appendChild(desktopNav);
+
+    navLinks.map((link) => {
       let li = document.createElement("li");
       let a = document.createElement("a");
       a.setAttribute("href", `${baseURL}/${link.path}`);
-      a.innerHTML = link.name;
 
       li.appendChild(a);
       navLinks.appendChild(li);
     });
-
-    desktopNav.appendChild(navLinks);
-    nav.appendChild(desktopNav);
 
     //     let html = `
     //     <div class="desktop-nav">
@@ -87,7 +85,7 @@
     // </div>
     //   `;
 
-    //nav.innerHTML += html;
+    nav.innerHTML += html;
   }
 
   generateNav();

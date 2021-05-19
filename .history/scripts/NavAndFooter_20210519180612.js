@@ -1,5 +1,5 @@
 (function () {
-  let navigation = [
+  let navLinks = [
     { path: "", name: "Home" },
     { path: "#", name: "Webshop" },
     { path: "#", name: "Sauna Info" },
@@ -20,11 +20,10 @@
     desktopNav.setAttribute("class", "desktop-nav");
     navLinks.setAttribute("class", "nav-links");
 
-    navigation.map((link) => {
+    navLinks.map((link) => {
       let li = document.createElement("li");
       let a = document.createElement("a");
       a.setAttribute("href", `${baseURL}/${link.path}`);
-      a.innerHTML = link.name;
 
       li.appendChild(a);
       navLinks.appendChild(li);

@@ -1,5 +1,5 @@
 (function () {
-  let navigation = [
+  let navLinks = [
     { path: "", name: "Home" },
     { path: "#", name: "Webshop" },
     { path: "#", name: "Sauna Info" },
@@ -12,7 +12,6 @@
   let baseURL = "https://pknar.github.io/SKW";
 
   function generateNav() {
-    console.log("generating");
     let nav = document.querySelector("nav");
     let desktopNav = document.createElement("div");
     let navLinks = document.createElement("ul");
@@ -20,74 +19,78 @@
     desktopNav.setAttribute("class", "desktop-nav");
     navLinks.setAttribute("class", "nav-links");
 
-    navigation.map((link) => {
+    navLinks.map((link) => {
       let li = document.createElement("li");
       let a = document.createElement("a");
       a.setAttribute("href", `${baseURL}/${link.path}`);
-      a.innerHTML = link.name;
 
       li.appendChild(a);
       navLinks.appendChild(li);
     });
 
-    desktopNav.appendChild(navLinks);
-    nav.appendChild(desktopNav);
+    let html = ` 
+    <div class="desktop-nav">
+    <img class="logo" alt='Saunakoning logo' src='./assets/logo/white.png' />
+    <ul class="nav-links ">
 
-    //     let html = `
-    //     <div class="desktop-nav">
-    //     <img class="logo" alt='Saunakoning logo' src='./assets/logo/white.png' />
-    //     <ul class="nav-links ">
+    ${navLinks
+      .map((link) => {
+        return `<li><a href="${baseURL}/${link.path}">${link.name} </a></li>`;
+      })
+      .join(",")}
+   
+    </ul>
 
-    //     ${navLinks
-    //       .map((link) => {
-    //         return `<li><a href="${baseURL}/${link.path}">${link.name} </a></li>`;
-    //       })
-    //       .join(",")}
+    <ul class="nav-icons">
+        <li><img src="assets/icons/search.png" /></li>
+        <li><img src="assets/icons/user.png" /></li>
+        <li><img src="assets/icons/shopping-bag.png" /></li>
+    </ul>
 
-    //     </ul>
+</div>
 
-    //     <ul class="nav-icons">
-    //         <li><img src="assets/icons/search.png" /></li>
-    //         <li><img src="assets/icons/user.png" /></li>
-    //         <li><img src="assets/icons/shopping-bag.png" /></li>
-    //     </ul>
 
-    // </div>
+<div class="mobile-nav">
 
-    // <div class="mobile-nav">
 
-    // <ul class="nav-icons">
-    // <li><img src="assets/icons/shopping-bag.png" /></li>
-    //     <li><img src="assets/icons/user.png" /></li>
-    //     <li><img src="assets/icons/search.png" /></li>
-    //     </ul>
 
-    // <img class="mobile-logo" alt='Saunakoning logo' src='./assets/logo/white.png' />
-    //     <div class="container-column">
-    //         <div class="burger-menu">
-    //             <div class="line top-line"></div>
-    //             <div class="line middle-line"></div>
-    //             <div class="line bottom-line"></div>
-    //         </div>
 
-    //         <ul class="nav-links close ">
-    //             <li><a class="active" href="/index.html">Home </a></li>
-    //             <li><a href="/acties">Acties </a></li>
-    //             <li><a href="#">Webshop </a></li>
-    //             <li><a href="#"> Sauna Info</a></li>
-    //             <li><a href="/showrooms.html">Showrooms </a></li>
-    //             <li><a href="/blogs.html">Blog </a></li>
-    //             <li><a href="/about.html">About </a></li>
-    //             <li><a href="/contact.html">Contact </a></li>
-    //             <li><a href="/careers.html">Wij verkopen ook</a></li>
-    //         </ul>
+<ul class="nav-icons">
+<li><img src="assets/icons/shopping-bag.png" /></li>
+    <li><img src="assets/icons/user.png" /></li>
+    <li><img src="assets/icons/search.png" /></li>
+    </ul>
 
-    //     </div>
+<img class="mobile-logo" alt='Saunakoning logo' src='./assets/logo/white.png' />
+    <div class="container-column">
+        <div class="burger-menu">
+            <div class="line top-line"></div>
+            <div class="line middle-line"></div>
+            <div class="line bottom-line"></div>
+        </div>
 
-    // </div>
-    //   `;
 
-    //nav.innerHTML += html;
+        <ul class="nav-links close ">
+            <li><a class="active" href="/index.html">Home </a></li>
+            <li><a href="/acties">Acties </a></li>
+            <li><a href="#">Webshop </a></li>
+            <li><a href="#"> Sauna Info</a></li>
+            <li><a href="/showrooms.html">Showrooms </a></li>
+            <li><a href="/blogs.html">Blog </a></li>
+            <li><a href="/about.html">About </a></li>
+            <li><a href="/contact.html">Contact </a></li>
+            <li><a href="/careers.html">Wij verkopen ook</a></li>
+        </ul>
+
+
+    </div>
+
+
+
+</div>
+  `;
+
+    nav.innerHTML += html;
   }
 
   generateNav();
