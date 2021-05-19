@@ -1,7 +1,7 @@
 (function () {
   let navLinks = [
     { path: "/", name: "Home" },
-    { path: "/blogs.html", name: "blogs" },
+    { path: "/blogs", name: "blogs" },
   ];
 
   function generateNav() {
@@ -10,11 +10,15 @@
     <div class="desktop-nav">
     <img class="logo" alt='Saunakoning logo' src='./assets/logo/white.png' />
     <ul class="nav-links ">
-
-    ${navLinks.map((link) => {
-      return ` <li><a href="${link.path}">${link.name} </a></li>`;
-    })}
-   
+        <li><a class="active" href="/">Home </a></li>
+        <li><a href="#">Acties </a></li>
+        <li><a href="#">Webshop </a></li>
+        <li><a href="#"> Sauna Info</a></li>
+        <li><a href="#">Showrooms </a></li>
+        <li><a href="./blogs.html">Blog </a></li>
+        <li><a href="./about.html">About </a></li>
+        <li><a href="#">Contact </a></li>
+        <li><a href="./careers.html">Wij verkopen ook</a></li>
     </ul>
 
     <ul class="nav-icons">
@@ -142,15 +146,3 @@
 
   generateFooter();
 })();
-
-{
-  /* <li><a class="active" href="/">Home </a></li>
-<li><a href="#">Acties </a></li>
-<li><a href="#">Webshop </a></li>
-<li><a href="#"> Sauna Info</a></li>
-<li><a href="#">Showrooms </a></li>
-<li><a href="./blogs.html">Blog </a></li>
-<li><a href="./about.html">About </a></li>
-<li><a href="#">Contact </a></li>
-<li><a href="./careers.html">Wij verkopen ook</a></li> */
-}

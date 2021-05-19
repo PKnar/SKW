@@ -1,7 +1,7 @@
 (function () {
   let navLinks = [
     { path: "/", name: "Home" },
-    { path: "/blogs.html", name: "blogs" },
+    { path: "/blogs", name: "blogs" },
   ];
 
   function generateNav() {
@@ -10,10 +10,6 @@
     <div class="desktop-nav">
     <img class="logo" alt='Saunakoning logo' src='./assets/logo/white.png' />
     <ul class="nav-links ">
-
-    ${navLinks.map((link) => {
-      return ` <li><a href="${link.path}">${link.name} </a></li>`;
-    })}
    
     </ul>
 

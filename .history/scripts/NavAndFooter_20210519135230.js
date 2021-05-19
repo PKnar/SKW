@@ -1,7 +1,7 @@
 (function () {
   let navLinks = [
     { path: "/", name: "Home" },
-    { path: "/blogs.html", name: "blogs" },
+    { path: "/blogs", name: "blogs" },
   ];
 
   function generateNav() {
@@ -12,7 +12,7 @@
     <ul class="nav-links ">
 
     ${navLinks.map((link) => {
-      return ` <li><a href="${link.path}">${link.name} </a></li>`;
+      return ` <li><a class="active" href="${link.path}">${link.name} </a></li>`;
     })}
    
     </ul>
