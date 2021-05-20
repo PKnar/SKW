@@ -30,6 +30,7 @@ header {
 .hero h1 {
   width: 100%;
   margin-bottom: 2rem;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .hero p {
@@ -95,7 +96,6 @@ header {
 .primary-button,
 .secondary-button {
   border: None;
-
   padding: 0.5rem 1rem;
   margin-top: 2rem;
   margin-right: 0.5rem;
@@ -108,12 +108,16 @@ header {
   background-color: var(--homepageButton);
   color: white;
   border: 1px solid var(--homepageButton);
+  font-size: 10px;
+  font-weight: bold;
 }
 
 .secondary-button {
   border: 1px solid white;
   background-color: transparent;
   color: white;
+  font-size: 10px;
+  font-weight: bold;
 }
 
 /* REVIEW SECTION */

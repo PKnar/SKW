@@ -1,54 +1,48 @@
-.imageBlog {
-  width: 300px;
-  height: 280px;
-}
-
-/*navigation bar*/
-header img {
-  width: 150px;
+header {
+  background: linear-gradient(rgba(23, 23, 23, 0.9), rgba(23, 23, 23, 0.6)),
+    url(../assets/images/blog-bg-crop.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 110vh;
+  position: relative;
+  color: white;
+  background-position: center top;
 }
 
 /*Hero page*/
 .hero {
-  background: linear-gradient(rgba(0, 0, 0, 0.57), rgba(0, 0, 0, 0.57)),
-    url(../assets/images/blog-bg-crop.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
   height: 100vh;
-  position: relative;
-  color: white;
+  width: 100%;
+  display: flex;
+  align-items: center;
 }
 
 .textContent {
   position: relative;
-  text-align: left;
-  padding: 70px 0;
+  color: #d6d6d6;
+  left: 8%;
 }
 
 .dateHeroPage {
-  padding: 20px 45px;
   color: #9e9e9e;
-  font-size: 20px;
 }
 
 .textContent h1 {
-  font-size: 36px;
-  padding: 10px 45px;
+  color: rgb(187, 187, 187);
 }
 
 .textContent p {
-  font-size: 16px;
-  padding: 20px 45px;
+  margin: 2rem 0;
 }
 
 .readMore {
-  padding: 10px 0 0 45px;
-  text-decoration: none;
-  color: var(--accentBright);
+  display: flex;
 }
 
-.arrowIcon {
-  padding: 20px 0 0 20px;
+.readMore a {
+  text-decoration: none;
+  color: var(--accentBright);
+  margin-right: 1rem;
 }
 
 /*glass effect box*/
@@ -60,21 +54,20 @@ header img {
   background: rgba(0, 0, 0, 0.404);
   width: 100%;
   display: flex;
-  height: 160px;
+  min-height: 160px;
+  justify-content: space-between;
 }
 
 .popularLeft {
-  padding: 0 0 0px 45px;
+  margin-left: 7%;
 }
 
-.popularLeft h1 {
-  font-size: 17px;
-  text-transform: uppercase;
-  padding-bottom: 20px;
+.popularLeft h4 {
+  margin-bottom: 10px;
 }
 
 .popularLeft p {
-  font-size: 16px;
+  font-size: 15px;
   color: #a1a1a1;
 }
 
@@ -100,18 +93,15 @@ header img {
 
 .newsRight {
   position: relative;
-  left: 950px;
-  padding-right: 20px;
+  margin-right: 7%;
 }
 
-.newsRight h1 {
-  font-size: 17px;
-  text-transform: uppercase;
-  padding-bottom: 5px;
+.newsRight h4 {
+  padding-bottom: 10px;
 }
 
 .newsRight p {
-  font-size: 16px;
+  font-size: 15px;
   color: #a1a1a1;
   padding-bottom: 10px;
 }
@@ -123,23 +113,28 @@ header img {
 /*the blogs part of the page*/
 
 .blogPage {
-  height: 100vh;
-  padding: 20px 45px;
+  min-height: 100vh;
+  padding: 3rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .blogsDisplay {
   display: flex;
+  margin-top: 50px;
+  width: 100%;
   flex-wrap: wrap;
-  padding: 100px 45px 0;
-  height: 100vh;
+  justify-content: center;
+  align-items: center;
 }
 
 .singleBlog {
-  width: 30%;
-  box-sizing: border-box;
-  margin: 10px 0 0 2%;
+  width: calc(100% / 4);
+  min-width: 300px;
   height: 100%;
-  padding: 0 0 100px 0;
+  margin: 2rem;
 }
 
 .textOverPic {
@@ -148,38 +143,36 @@ header img {
 
 .textBlock {
   position: absolute;
-  top: 110px;
-  left: 75px;
-  color: white;
-  padding-left: 20px;
-  padding-right: 20px;
+  top: 45%;
+  text-align: center;
+  width: 100%;
 }
 
-.textBlock h2 {
-  text-align: center;
+.textBlock h3 {
+  color: white;
 }
 
 .imageBlog {
-  width: 400px;
+  width: 100%;
   object-fit: cover;
-  filter: brightness(45%);
+  filter: brightness(40%);
 }
 
 .dateBlog {
-  color: var(--lightGray);
+  color: grey;
   font-size: 12px;
-  padding-top: 20px;
+  margin-top: 1rem;
 }
 
 .singleBlog h6 {
   font-size: 10px;
-  color: var(--lightGray);
+  color: grey;
 }
 
 .singleBlog p {
-  color: var(--blogText);
-  font-size: 16px;
-  padding: 18px 0 20px 0;
+  color: rgb(43, 43, 43);
+  margin: 1rem 0;
+  font-size: 15px;
 }
 
 .singleBlog a {
@@ -204,139 +197,44 @@ button {
 
 .circleButton {
   border-radius: 50%;
-  background-color: var(--lightButton);
-  font-size: 15px;
+  background-color: rgb(202, 200, 200);
   height: 40px;
-  width: 45px;
+  width: 40px;
   margin: 0 10px;
-}
-
-/* Footer */
-
-footer {
-  background-color: var(--headerBackgroundColor);
-  width: 100%;
+  text-align: center;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding-top: 3rem;
-  color: rgb(218, 218, 218);
-  margin-top: 800px;
-}
-
-footer a {
-  color: grey;
-}
-
-.footer-message {
-  margin: 2rem;
-  font-size: 12px;
-}
-
-.socials {
-  display: flex;
-  align-items: center;
   justify-content: center;
-}
-footer hr {
-  color: grey;
-  width: 250px;
-}
-
-.socials img {
-  width: 15px;
-  margin: 0.5rem;
-}
-
-.socials p {
-  font-size: 12px;
-  text-transform: uppercase;
-  margin-left: 0.5rem;
-}
-
-.footer-contact p {
-  font-size: 12px;
-  margin: 0.5rem;
-}
-
-.footer-contact a {
-  margin-left: 0.5rem;
-}
-
-.footer-logo {
-  width: 150px;
-}
-
-.footer-contact {
-  display: flex;
   align-items: center;
 }
 
-.footer-contact img {
-  width: 30px;
+.active-circle {
+  background-color: var(--accentDark);
+}
+
+.flex-row {
+  display: flex;
+}
+
+.lees-meer {
+  width: 450px;
+}
+
+.flex-row a {
   margin-right: 1rem;
 }
 
-footer .flex-row {
-  display: flex;
-  align-items: center;
-}
+@media (max-width: 500px) {
+  h1 {
+    font-size: 1.5rem;
+  }
 
-.vertical-line {
-  height: 50px;
-  background-color: white;
-  width: 1px;
-  margin: 1rem;
-}
+  .textContent p {
+    font-size: 1rem;
+    width: 300px;
+  }
 
-.container-row {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.footer-links {
-  margin: 3rem 2rem;
-  min-width: 250px;
-}
-
-.footer-links li {
-  margin-top: 0.5rem;
-  font-size: 13px;
-}
-
-.payments {
-  display: flex;
-  align-items: center;
-  background-color: white;
-  width: 100%;
-  justify-content: center;
-  padding: 2rem;
-  margin-top: 6rem;
-}
-
-.payments a {
-  color: black;
-  margin-right: 2rem;
-  font-size: 13px;
-}
-
-.payment-icons {
-  display: flex;
-  align-items: center;
-}
-
-.payment-icons img {
-  width: 30px;
-  margin: 0.3rem;
-}
-
-.rating {
-  width: 300px;
-}
-
-.hero {
-  height: 100vh;
-  width: 100%;
-  display: flex;
-  align-items: center;
+  .transparentBox h4,
+  .transparentBox p {
+    font-size: 13px;
+  }
 }

@@ -1,0 +1,6 @@
+1. Add circles to the map
+2. Add scroll circles
+3. Consistent Fonts
+4.Responsive Design
+5.Segoe UI font 
+6.Correct Navigation links 
