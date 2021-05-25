@@ -242,7 +242,7 @@ hr {
       rgba(3, 3, 3, 0.85),
       rgba(7, 7, 7, 0.5)
     ),
-    url("../assets/images/binnenSauna.jpg");
+    url("../assets/images/homepage/binnenSauna.jpg");
   transform: translateY(80px);
   opacity: 0;
 }
@@ -253,7 +253,7 @@ hr {
       rgba(3, 3, 3, 0.85),
       rgba(7, 7, 7, 0.5)
     ),
-    url("../assets/images/sauna1.jpg");
+    url("../assets/images/homepage/sauna.jpg");
   transform: translateY(120px);
   opacity: 0;
 }
@@ -264,7 +264,7 @@ hr {
       rgba(3, 3, 3, 0.85),
       rgba(7, 7, 7, 0.5)
     ),
-    url("../assets/images/Infrarood\ sauna\ rechthoek.jpg");
+    url("../assets/images/homepage/Infrarood.jpg");
   transform: translateY(160px);
   opacity: 0;
 }
@@ -274,7 +274,7 @@ hr {
       rgba(3, 3, 3, 0.85),
       rgba(7, 7, 7, 0.5)
     ),
-    url("../assets/images/barrel-red-cedar-Nutty-165cm-and-240cm-2-1030x983.png");
+    url("../assets/images/homepage/barrel.png");
   transform: translateY(200px);
   opacity: 0;
 }
@@ -359,7 +359,7 @@ hr {
       rgba(3, 3, 3, 0.4),
       rgba(7, 7, 7, 0.4)
     ),
-    url("../assets/images/acties.jpg");
+    url("../assets/images/homepage/acties.jpg");
   transform: translateX(-100px);
   opacity: 0;
 }
@@ -370,7 +370,7 @@ hr {
       rgba(3, 3, 3, 0.4),
       rgba(7, 7, 7, 0.4)
     ),
-    url("../assets/images/about.jpg");
+    url("../assets/images/homepage/about.jpg");
   transform: translateY(50px);
   opacity: 0;
 }
@@ -381,7 +381,7 @@ hr {
       rgba(3, 3, 3, 0.4),
       rgba(7, 7, 7, 0.4)
     ),
-    url("../assets/images/catalogus.jpg");
+    url("../assets/images/homepage/catalogus.jpg");
   transform: translateX(100px);
   opacity: 0;
 }
@@ -392,7 +392,7 @@ hr {
       rgba(3, 3, 3, 0.4),
       rgba(7, 7, 7, 0.4)
     ),
-    url("../assets/images/blog.jpg");
+    url("../assets/images/homepage/blog.jpg");
   transform: translateY(50px);
   opacity: 0;
 }

@@ -4,89 +4,14 @@
 }
 
 header {
-  height: 100vh;
-  width: 100%;
-  background: linear-gradient(to bottom, rgba(3, 3, 3, 0.8), rgba(7, 7, 7, 0.8)),
-    url(../about-page/about-us/images/Ivan-Samkov.png);
+  background: linear-gradient(rgba(23, 23, 23, 0.8), rgba(23, 23, 23, 0.8)),
+    url(../assets/images/about/about.jpg);
   background-size: cover;
-  display: flex;
-  flex-direction: column;
-  background-position: top;
-}
-
-#heading {
-  height: 100vh;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-#heading > h1 {
-  text-align: center;
-  font-size: 3rem;
+  background-repeat: no-repeat;
+  height: 110vh;
+  position: relative;
   color: white;
-  z-index: 999;
-  text-transform: uppercase;
-}
-
-#linkswrapper {
-  display: flex;
-  justify-content: center;
-}
-
-#linkbcg {
-  background-color: rgba(0, 0, 0, 0.7);
-  height: 10rem;
-  width: 100%;
-  align-self: flex-end;
-  z-index: 0;
-}
-
-#links {
-  display: flex;
-  justify-content: space-between;
-  color: var(--silver);
-  font-weight: 200;
-  margin-left: 5%;
-  margin-right: 5%;
-  margin-bottom: calc(0.5% - 10rem);
-  margin-top: auto;
-  z-index: 1;
-  line-height: 2rem;
-}
-
-#links > div > h3 {
-  letter-spacing: 5px;
-  font-size: 1rem;
-}
-
-.active {
-  border-bottom: #c3aa9a 1.5px solid;
-}
-
-.people {
-  display: flex;
-  justify-content: space-between;
-}
-
-.peopledesc {
-  width: 50%;
-  height: 50%;
-  text-align: left;
-  margin: auto;
-  padding-left: 9vh;
-  padding-right: 9vh;
-}
-
-article > h3 {
-  margin-bottom: 2rem;
-  text-align: center;
-}
-
-.personimage {
-  width: 50%;
-  height: 50%;
+  background-position: center top;
 }
 
 #team {
@@ -122,139 +47,6 @@ article > h3 {
   margin-bottom: 5vh;
 }
 
-#socials {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-#socials1 {
-  width: 50%;
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  margin-right: 30px;
-}
-
-#socials1 > a > img {
-  width: 15px;
-  height: 15px;
-}
-
-#socials2 {
-  width: 49%;
-  border-left: 2px solid grey;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  text-decoration: none;
-}
-
-#socials2 > a > img {
-  width: 20px;
-  height: 20px;
-  margin-left: 15px;
-}
-
-#socials2 > a {
-  text-decoration: none;
-}
-
-#contacttext {
-  margin-left: 10px;
-  margin-bottom: 4.1px;
-  font-size: 0.8rem;
-  font-family: "Montserrat", sans-serif;
-  text-decoration: none;
-  color: #808080;
-}
-
-#footer-contact {
-  width: 350px;
-  margin: 0px auto;
-  margin-top: 40px;
-  display: flex;
-  justify-content: center;
-  height: 130px;
-  border-top: 2px solid grey;
-  border-bottom: 2px solid grey;
-}
-
-#phone-icon {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 80px;
-}
-
-#phone-icon > a > img {
-  width: 50px;
-  height: 50px;
-}
-
-#tel-numbers {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  color: grey;
-}
-
-#tel-numbers > p > a {
-  color: grey;
-}
-
-#footer-links {
-  margin: 3rem 2rem;
-  min-width: 250px;
-}
-
-.footer-links-item {
-  width: 350px;
-  float: left;
-}
-
-.footer-links-item > h4 {
-  text-align: left;
-  margin-left: 25%;
-}
-
-.footer-links-item > ul {
-  margin-left: 25%;
-  list-style: none;
-}
-
-.footer-links-item li {
-  margin-top: 0.5rem;
-  font-size: 13px;
-}
-
-.footer-links-item > ul > li > a {
-  color: white;
-  text-decoration: none;
-}
-
-#payments {
-  display: flex;
-  align-items: center;
-  background-color: white;
-  width: 100%;
-  justify-content: center;
-  padding: 2rem;
-  margin-top: 6rem;
-}
-
-#payment-icons > img {
-  width: 30px;
-  height: 30px;
-  margin: 0.3rem;
-}
-
-#payments > a {
-  color: black;
-  margin-right: 2rem;
-  font-size: 13px;
-}
-
 #hiringwrapper {
   height: 100vh;
   display: flex;
@@ -267,10 +59,11 @@ article > h3 {
       rgba(3, 3, 3, 0.6),
       rgba(7, 7, 7, 0.6)
     ),
-    url("../assets/images/careers.jpg");
+    url("../assets/images/careers/careers.jpg");
   height: 70vh;
   width: 100%;
   background-size: cover;
+  background-position: center;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -280,7 +73,7 @@ article > h3 {
 
 #hiring > h1 {
   margin-bottom: 5vh;
-  font-size: 3rem;
+  font-size: 2rem;
   color: white;
 }
 
@@ -301,6 +94,9 @@ article > h3 {
   display: flex;
   justify-content: space-evenly;
   margin-bottom: 15vh;
+  background-color: #f5f5f5;
+  min-height: 70vh;
+  padding: 6rem 4rem;
 }
 
 #description {
@@ -310,32 +106,40 @@ article > h3 {
   justify-content: center;
 }
 
+#description p {
+  font-size: 11px;
+  color: grey;
+  margin-bottom: 0.5rem;
+}
+
 #questions {
   width: 50%;
 }
 
 .question {
-  font-weight: bolder;
+  padding-bottom: 1rem;
 }
 
 .questionwrapper {
-  border-bottom: 2px solid black;
-  margin-bottom: 1vh;
+  border-bottom: 1.5px solid rgb(141, 141, 141);
+  margin-bottom: 2rem;
+  height: 50px;
+  overflow: hidden;
+  transition: 1s;
+  padding-right: 2rem;
 }
 .answer {
-  font-weight: lighter;
-  display: none;
-  color: var(--shark);
+  color: black;
+  font-size: 13px;
+  margin: 1rem 0;
 }
 
 .question > img {
   float: right;
   height: 2vh;
   cursor: pointer;
-}
-
-#phmenu {
-  display: none;
+  width: auto;
+  transition: 1s;
 }
 
 #teammobile {
@@ -343,11 +147,6 @@ article > h3 {
 }
 
 @media only screen and (max-width: 1023px) {
-  #pcnav,
-  #pcmenu {
-    display: none;
-  }
-
   #team {
     display: none;
   }
@@ -355,140 +154,6 @@ article > h3 {
   #phmenu {
     display: block;
     margin-left: 30px;
-  }
-
-  #logo {
-    margin: 0 auto;
-  }
-
-  #heading > h1 {
-    text-align: center;
-    position: relative;
-    bottom: 15vh;
-    font-size: 4rem;
-    color: white;
-    font-weight: 400;
-    z-index: 0;
-  }
-
-  #phonemenubtn {
-    position: absolute;
-    right: 30px;
-    top: 30px;
-    height: 3vh;
-    width: 3vh;
-  }
-
-  #answerswitch1,
-  #answerswitch2,
-  #answerswitch3,
-  #answerswitch4,
-  #answerswitch5 {
-    margin-top: 1.5vh;
-    margin-bottom: 1vh;
-  }
-
-  .questionwrapper {
-    display: flex;
-    flex-direction: row;
-    text-align: left;
-  }
-
-  #closebtn {
-    height: 3vh;
-    width: 3vh;
-    float: right;
-    margin-top: 30px;
-    margin-right: 30px;
-    z-index: 1;
-  }
-
-  #phonemenuopen {
-    z-index: 999999;
-    width: 70%;
-    height: 100%;
-    position: absolute;
-    left: 30%;
-    top: 0;
-    display: flex;
-    background-color: white;
-    min-height: 620px;
-  }
-
-  .phonemenuicon {
-    float: right;
-    height: 3vh;
-    width: 3vh;
-    margin-top: 10px;
-    margin-left: 5px;
-    z-index: 1;
-  }
-
-  #phonenav {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    list-style: none;
-    width: 100%;
-    height: 100%;
-    background-color: var(--white);
-    box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.12);
-    z-index: 9998;
-  }
-
-  #phonenav a {
-    color: var(--black);
-  }
-
-  .people {
-    display: flex;
-    margin-top: 3vh;
-    flex-direction: column;
-    justify-content: space-between;
-  }
-
-  #phonemenu {
-    float: left;
-    margin-top: 30px;
-    margin-left: 30px;
-  }
-  .peopledesc {
-    width: 100%;
-    height: 50%;
-    text-align: left;
-    margin: auto;
-    margin-top: 2vh;
-    font-size: 1.25rem;
-    color: var(--shark);
-  }
-
-  article > h3 {
-    margin-top: 2rem;
-    text-align: center;
-  }
-
-  article > p {
-    margin-bottom: 2rem;
-  }
-
-  #mobileborder {
-    border-top: 1px solid var(--shark);
-  }
-
-  .personimage {
-    width: 100%;
-    height: 50%;
-  }
-
-  .peoplerev {
-    flex-direction: column-reverse;
-  }
-
-  #navlogo {
-    width: 50%;
-    height: 7%;
-    margin-top: 10vh;
   }
 
   #teammobile {
@@ -529,13 +194,139 @@ article > h3 {
     margin-bottom: 1vh;
     height: 15vh;
   }
+}
 
-  #footer-contact {
-    margin-right: 5vh;
+/* header  new code  - Knarik */
+
+/*Hero page*/
+.hero {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  color: rgb(206, 206, 206);
+  text-align: center;
+  padding: 2rem;
+}
+
+.hero p {
+  color: rgb(224, 224, 224);
+  margin-top: 1rem;
+}
+
+.transparentBox {
+  position: absolute;
+  bottom: 0px;
+  padding: 50px 0;
+  background: rgba(0, 0, 0, 0.404);
+  width: 100%;
+  display: flex;
+  min-height: 160px;
+  justify-content: space-between;
+}
+
+.refLeft {
+  margin-left: 7%;
+}
+
+.banner h4 {
+  margin-bottom: 10px;
+}
+.banner p {
+  font-size: 15px;
+  color: #a1a1a1;
+}
+.banner a {
+  color: var(--accentBright);
+  text-decoration: none;
+}
+
+.newsRight {
+  margin-right: 7%;
+}
+
+/*  service section */
+
+.service {
+  display: flex;
+  min-height: 500px;
+  flex-wrap: wrap;
+}
+
+.bg {
+  background-size: cover;
+  width: calc(100% / 2);
+  height: 500px;
+}
+
+.service-bg {
+  background-image: linear-gradient(
+      rgba(23, 23, 23, 0.5),
+      rgba(23, 23, 23, 0.5)
+    ),
+    url(../assets/images/about/pexels-photo-3637836.jpeg);
+}
+
+.specialist-bg {
+  background-image: linear-gradient(
+      rgba(23, 23, 23, 0.5),
+      rgba(23, 23, 23, 0.5)
+    ),
+    url(../assets/images/about/pexels-cleyder-duque-3637834.jpg);
+}
+
+.serviceDesc {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 4rem;
+}
+
+.serviceDesc h3 {
+  margin-bottom: 2rem;
+}
+
+@media (max-width: 700px) {
+  .serviceDesc,
+  .bg {
     width: 100%;
+  }
+
+  .bg {
+    height: 300px;
+  }
+
+  .specialist {
+    flex-direction: column-reverse;
+  }
+  #faq {
+    flex-direction: column;
+  }
+
+  #description,
+  #questions {
+    width: 100%;
+  }
+
+  #description {
+    text-align: center;
+  }
+
+  #questions {
+    margin-top: 2rem;
   }
 }
 
-#phonemenuopen {
-  display: none;
+.openAnswer {
+  height: 150px;
+  transition: 1s;
+}
+
+.rotate {
+  transform: rotate(90deg);
+  transition: 1s;
 }

@@ -1,12 +1,12 @@
 header {
   background: linear-gradient(rgba(23, 23, 23, 0.9), rgba(23, 23, 23, 0.6)),
-    url(../assets/images/blog-bg-crop.jpg);
+    url(../assets/images/blogs/blog-bg.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   height: 110vh;
   position: relative;
   color: white;
-  background-position: center top;
+  background-position: center;
 }
 
 /*Hero page*/
