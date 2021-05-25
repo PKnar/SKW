@@ -24,12 +24,24 @@
 
     <header id='header'>
         <div class='circles'>
-            <div class="circle"></div>
-            <div class="circle"></div>
-            <div class="circle"></div>
-            <div class="circle"></div>
-            <div class="circle"></div>
-            <div class="circle"></div>
+            <div class="circle-wrapper active">
+                <div class="circle-child"> </div>
+            </div>
+            <div class="circle-wrapper">
+                <div class="circle-child"> </div>
+            </div>
+            <div class="circle-wrapper">
+                <div class="circle-child"> </div>
+            </div>
+            <div class="circle-wrapper">
+                <div class="circle-child"> </div>
+            </div>
+            <div class="circle-wrapper">
+                <div class="circle-child"> </div>
+            </div>
+            <div class="circle-wrapper">
+                <div class="circle-child"> </div>
+            </div>
 
         </div>
         <div class='hero'>
@@ -37,19 +49,24 @@
                 <h1>De Sauna Specialist<br>
                     Van De <span id='abuget'>Benelux</span>
                 </h1>
-                <p class="heroMessage">Bij Saunakoning kunt u een binnensauna, buitensauna en <br /> infrarood sauna
+                <p class="heroMessage">Bij Saunakoning kunt u een binnensauna, buitensauna en infrarood sauna
                     kopen. Wij
                     leveren moderne
-                    producten van <br /> hoogwaardige kwaliteit </p>
+                    producten van hoogwaardige kwaliteit </p>
 
-                <button class="secondary-button">Bekijk Sauna's</button>
-                <button class="primary-button">Showrooms</button>
+
+
+                <div class="buttons">
+                    <button class="secondary-button">Bekijk Sauna's</button>
+                    <button class="primary-button">Showrooms</button>
+
+                </div>
+
 
             </div>
 
-
         </div>
-        <div class="bg-image">
+        <div class="bg-video">
             <div class="box left-box">
                 <video class="left " muted='true' autoplay="true" loop="true">
                     <source id='bg-video' src="./assets/green.mp4" type="video/mp4">
@@ -74,19 +91,19 @@
 
     </header>
     <div class="value-prop">
-        <div class="flex-center">
+        <div class="flex-center value">
             <img src='./assets/icons/value-prop/customer.png' />
             <h5>Meer dan 12.000+ klanten </h5>
         </div>
-        <div class="flex-center">
+        <div class="flex-center value ">
             <img src='./assets/icons/value-prop/price-tag.png' />
             <h5>Laagste prijs garantie</h5>
         </div>
-        <div class="flex-center">
+        <div class="flex-center value">
             <img src='./assets/icons/value-prop/calendar.png' />
             <h5> 6 Dagen per week geopend </h5>
         </div>
-        <div class="flex-center">
+        <div class="flex-center value">
             <img src='./assets/icons/value-prop/service.png' />
             <h5> De beste service </h5>
         </div>
@@ -105,15 +122,32 @@
 
         </div>
         <div class="reviews-content">
-            <div class="arrow-wrapper">
+            <div class="arrow-wrapper prev">
                 <img src='./assets/icons/arrows/previous.png' />
             </div>
-            <p>
-                "Bij aankoop van onze infraroodcabine, zeer goede, adequate uitleg gekregen. Ook bij de plaatsing
+
+
+
+            <p class="review">
+                "Bij aankoop van onze infraroodcabine, zeer goede, adequate uitleg gekregen. Ook bij de
+                plaatsing
                 van de
                 cabine thuis hadden we aangename ervaring."
             </p>
-            <div class="arrow-wrapper">
+            <p class="review">
+                "Medewerker was zeer vriendelijk, heeft de nodige tijd genomen om uitleg te geven. Nu trotse eigenaars
+                van een infraroodcabine en heel blij ermee."
+            </p>
+            <p class="review">
+
+                "Zeer positieve ervaring bij de saunakoning, monteur belde netjes op voorhand wanneer hij onderweg was,
+                zeer vriendelijke en goede technische monteur, mooi afgewerkt!"
+            </p>
+
+
+
+
+            <div class="arrow-wrapper next">
                 <img src='./assets/icons/arrows/next.png' />
             </div>
         </div>
@@ -175,18 +209,23 @@
         </div>
     </section>
     <section class="benefits-section">
+
         <h3>Sauna Benefits</h3>
         <hr />
-        <p>De sauna is de ideale plaats om te ontspannen. Regelmatig gebruik van de sauna is bovendien een heerlijk
-            middel om fit, actief en gezond te blijven. Het is geneeskundig en therapeutisch bewezen dat het gebruiken
-            van een sauna het algemene afweersysteem verbeterd. De sauna heeft een positieve invloed op de
-            hartactiviteiten en de bloeddruk. Een geschikt saunabad werkt positief op het gehele lichaam.</p>
+        <div>
+            <p>De sauna is de ideale plaats om te ontspannen. Regelmatig gebruik van de sauna is bovendien een heerlijk
+                middel om fit, actief en gezond te blijven. Het is geneeskundig en therapeutisch bewezen dat het
+                gebruiken
+                van een sauna het algemene afweersysteem verbeterd. De sauna heeft een positieve invloed op de
+                hartactiviteiten en de bloeddruk. Een geschikt saunabad werkt positief op het gehele lichaam.</p>
 
 
-        <div class="meer">
-            <a> Leer meer over sauna's </a>
-            <img src='./assets/icons/arrows/dark-arrow.png' />
+            <div class="meer">
+                <a> Leer meer over sauna's </a>
+                <img src='./assets/icons/arrows/dark-arrow.png' />
+            </div>
         </div>
+
 
 
 

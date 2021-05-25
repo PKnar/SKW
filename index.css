@@ -11,7 +11,7 @@
   --white: #ffff;
   --accentBright: #e8c3a9;
   --accentDark: #a26e4a;
-  --homepageButton: #694c38;
+  --homepageButton: #91735f;
   --headerBackgroundColor: #1a1a1b;
   --boxShadow: -1px 7px 5px 0px rgba(58, 58, 58, 0.1);
 
@@ -229,11 +229,10 @@ footer a {
   font-size: 12px;
 }
 
-.socials {
+footer .socials {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 100%;
 }
 footer hr {
   color: grey;
@@ -330,7 +329,7 @@ footer .flex-row {
 
 .rating {
   width: 300px;
-  margin-top: 3 rem;
+  margin-top: 3rem;
 }
 
 @media (max-width: 500px) {

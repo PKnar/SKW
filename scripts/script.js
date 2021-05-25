@@ -1,6 +1,5 @@
 function main() {
   "use strict";
-  console.log("window reloaded");
 
   /* Navogation -change backgroun on scroll */
   window.addEventListener("scroll", (event) => {
@@ -35,6 +34,53 @@ function main() {
   if (burgerMenu) {
     burgerMenu.addEventListener("click", (e) => handleMobileNavClick(e));
   }
+
+  /* slideshow*/
+
+  let slideIndex = 1;
+
+  let next = document.querySelector(".next");
+  let prev = document.querySelector(".prev");
+  let isButtonClicked = false;
+
+  //   let interval = setInterval(() => nexSlide(1), 3000);
+  // }
+
+  showSlides(slideIndex);
+
+  function nexSlide(n) {
+    showSlides((slideIndex += n));
+  }
+
+  function showSlides(n) {
+    var i;
+    var slides = document.querySelectorAll(".review");
+
+    if (n > slides.length) {
+      slideIndex = 1;
+    }
+    if (n < 1) {
+      slideIndex = slides.length;
+    }
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+    }
+    slides[slideIndex - 1].style = " animation: slideLeft 2s forwards";
+    slides[slideIndex - 1].style.display = "block";
+  }
+
+  prev.addEventListener("click", (e) => {
+    isButtonClicked = true;
+    nexSlide(-1);
+  });
+  next.addEventListener("click", (e) => {
+    isButtonClicked = true;
+    nexSlide(1);
+  });
+
+  // if (!isButtonClicked) {
+  //   interval = ;
+  // }
 }
 
 window.addEventListener("load", main);
