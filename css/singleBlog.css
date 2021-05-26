@@ -19,10 +19,19 @@ body {
   align-items: center;
 }
 
-.blog-wrapper .flex-center img {
-  margin: 3rem;
+.img-wrapper {
+  height: 500px;
   width: 100%;
+  background-image: url(../assets/images/blogs/blog-bg.jpg);
+  background-position: center;
+  background-size: cover;
+  margin: 2rem 0;
+  min-width: 500px;
 }
+/* .img-wrapper img {
+  width: 100%;
+  margin: 2rem 0;
+} */
 
 .flex-center h1 {
   text-align: center;
