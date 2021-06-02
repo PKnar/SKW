@@ -17,13 +17,12 @@
 (function () {
   let categories = {
     finse: {
-      cover:
-        "https://pknar.github.io/SKW/assets/images/products/winter-sauna.jpg",
+      cover: "../assets/images/products/winter-sauna.jpg",
       title: "ONTDEK FINSE SAUNA'S",
       desc: "Een Finse sauna, een traditionele sauna, is ideaal voor echte levensgenieters. U kunt heerlijk genieten van de warmte, liggend of zittend op houten banken met diverse hoogtes. De temperatuur van de lucht in Finse sauna’s wordt erg hoog, soms tot wel 90 graden Celcius. U begint in een Finse sauna dus snel te zweten, waardoor bijvoorbeeld de doorbloeding wordt bevorderd en de hartprestatie wordt verhoogd. Even helemaal niets, alleen maar genieten!",
     },
     infrarood: {
-      cover: "https://pknar.github.io/SKW/assets/images/homepage/Infrarood.jpg",
+      cover: "../assets/images/homepage/Infrarood.jpg",
       title: "Ultiem genieten in een infrarood cabine",
       desc: "Ontspanning en rust met een infraroodcabine van Saunakoning. U kunt een infraroodcabine in verschillende afmetingen kopen. De straling van infrarood in de cabine zorgt voor natuurlijke warmte en diepdoordringende pijnverlichtende straling. Terwijl u van deze wellness stralingen geniet, kunt u luisteren naar uw favoriete muziek dankzij de ingebouwde radio met speakers.",
     },
