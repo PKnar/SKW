@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="index.css" rel='stylesheet' />
+    <link rel="stylesheet" href="css/singleShowroom.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <title>Showroom</title>
+</head>
+
+<body>
+    <!--Navbar is generated with JS-->
+    <main>
+        <nav></nav>
+    </main>
+    <!-- Hero page -->
+    <header>
+        <div class="hero">
+            <!--Text conent of the hero page-->
+            <div class="textContent">
+
+                <h1>Waalre
+                </h1>
+                <p class="heroMessage">Van Elderenlaan 8 <br />
+                    5581 WJ <br />
+                    +31 (0) 40 707 45 49</p>
+                <div class="readMore">
+                    <a href="#">Plan Uw Bezoek</a>
+
+                </div>
+
+            </div>
+            <!--The glass box with news-->
+
+        </div>
+
+    </header>
+
+    <section class="form-section">
+
+        <h1>VRAAG EEN BEZOEK AAN</h1>
+        <h2>ONZE SHOWROOMS ZIJN OP AFSPRAAK GEOPEND!</h2>
+        <hr>
+        <p>Vanwege de huidige COVID-19 situatie kunt u nog op afspraak langskomen in onze showroom. Met deze afspraak
+            heb je de showroom 30 minuten beschikbaar.
+        </p>
+        <p>
+            We hanteren de volgende regels:
+        </p>
+
+        <ul>
+            <li>- Het dragen van een mondmasker is verplicht in onze showroom</li>
+            <li>- Wij staan niet open voor de aanschaf van onderhoudsproducten of accessoires. Deze koop je via onze
+                webshop. Klik hier
+            </li>
+
+            <li>- Online service aanvragen. Klik hier
+            </li>
+        </ul>
+
+        <form>
+
+
+            <div class="container">
+
+
+                <div class="row">
+                    <div class="column">
+                        <label>Naam *</label>
+                        <input type='text' required />
+                    </div>
+
+                    <div class="column">
+                        <label>E-mailadres *</label>
+                        <input type='text' required />
+                    </div>
+                </div>
+
+
+                <div class="row">
+                    <div class="column">
+                        <label> Telefoonnummer *</label>
+                        <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+                    </div>
+
+
+
+                    <div class="column">
+                        <label>Land *</label>
+                        <select required>
+                            <option selected>Nederland</option>
+                            <option>Belgie</option>
+                            <option>Overige</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="column">
+                        <label> Selecteer de dag *</label>
+                        <input type="date" required>
+                    </div>
+
+
+
+                    <div class="column">
+                        <label> Selecteer de dag *</label>
+                        <input type="time" required>
+                    </div>
+                </div>
+
+
+
+
+
+                <button>Verstuur</button>
+            </div>
+
+        </form>
+
+    </section>
+
+
+    <footer>
+
+
+    </footer>
+    <script src='scripts/NavAndFooter.js'></script>
+    <script src='scripts/script.js'></script>
+    <script src="scripts/blogsScript.js"></script>
+
+</body>
+
+</html>

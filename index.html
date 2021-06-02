@@ -22,28 +22,8 @@
         <nav></nav>
     </main>
 
-    <header id='header'>
-        <div class='circles'>
-            <div class="circle-wrapper active">
-                <div class="circle-child"> </div>
-            </div>
-            <div class="circle-wrapper">
-                <div class="circle-child"> </div>
-            </div>
-            <div class="circle-wrapper">
-                <div class="circle-child"> </div>
-            </div>
-            <div class="circle-wrapper">
-                <div class="circle-child"> </div>
-            </div>
-            <div class="circle-wrapper">
-                <div class="circle-child"> </div>
-            </div>
-            <div class="circle-wrapper">
-                <div class="circle-child"> </div>
-            </div>
-
-        </div>
+    <header id='header ' class='section dark'>
+        <div class="circles"></div>
         <div class='hero'>
             <div class=" wrapper">
                 <h1>De Sauna Specialist<br>
@@ -57,8 +37,8 @@
 
 
                 <div class="buttons">
-                    <button class="secondary-button">Bekijk Sauna's</button>
-                    <button class="primary-button">Showrooms</button>
+                    <button class="secondary-button"><a href='/webshop.html'>BEKIJK SAUNA'S</a></button>
+                    <button class="primary-button"><a href='/showrooms.html'>Showrooms</a></button>
 
                 </div>
 
@@ -110,7 +90,7 @@
 
     </div>
 
-    <section class="reviews-section">
+    <section class="reviews-section section bright">
 
 
         <div class="reviews-title">
@@ -154,7 +134,7 @@
         <img class="rating" src="./assets/icons/Rating.png" />
 
     </section>
-    <section class="products-section">
+    <section class="products-section section dark">
         <h3>Onze Assortimenten</h3>
         <hr />
 
@@ -192,23 +172,23 @@
         <div class="assortiments">
             <div class="assortiment a1">
                 <p>Binnensauna's</p>
-                <button>Shop</button>
+                <button> <a href="/products.html">Shop</a></button>
             </div>
             <div class="assortiment a2">
                 <p>Buitensauna's</p>
-                <button>Shop</button>
+                <button> <a href="/products.html">Shop</a></button>
             </div>
             <div class="assortiment a3">
                 <p>Infrarood sauna's</p>
-                <button>Shop</button>
+                <button> <a href="/products.html">Shop</a></button>
             </div>
             <div class="assortiment a4">
                 <p>Barrel sauna's</p>
-                <button>Shop</button>
+                <button> <a href="/products.html">Shop</a></button>
             </div>
         </div>
     </section>
-    <section class="benefits-section">
+    <!-- <section class="benefits-section">
 
         <h3>Sauna Benefits</h3>
         <hr />
@@ -220,39 +200,33 @@
                 hartactiviteiten en de bloeddruk. Een geschikt saunabad werkt positief op het gehele lichaam.</p>
 
 
-            <div class="meer">
-                <a> Leer meer over sauna's </a>
-                <img src='./assets/icons/arrows/dark-arrow.png' />
-            </div>
         </div>
 
 
 
 
-    </section>
-    <section class="extras-section">
+    </section> -->
+    <section class="extras-section section bright">
         <h3>Ontdek Meer</h3>
         <hr />
         <div class="flex-row">
             <div class="flex-column">
-                <div class="acties"><button>Acties</button></div>
+                <div class="acties"><button><a href='/acties.html'>Acties</a></button></div>
                 <div class="flex-row-child">
-                    <div class="about"><button>About</button></div>
-                    <div class="blog"><button>Blog</button></div>
+                    <div class="about"><button> <a href="/about.html"> About</a></button></div>
+                    <div class="blog"><button> <a href="/blogs.html">Blog</a> </button></div>
                 </div>
             </div>
             <div class="catalogus">
-                <button id='catalogus-button'>Download Catalogus <img
-                        src='./assets/icons/arrows/dark-arrow.png' /></button>
+                <button id='catalogus-button'> <a href="https://saunakoning.nl/magazine/sauna-magazine.html">Download
+                        Catalogus <img src='./assets/icons/arrows/dark-arrow.png' /></a> </button>
 
 
 
             </div>
         </div>
     </section>
-
-
-    <section class="map-section">
+    <section class="map-section section dark">
         <div id='map'>
             <img src='./assets/images/global/map.png' />
         </div>
@@ -278,7 +252,7 @@
 
             </div>
             <div class="meer">
-                <a>Bekijk al onze showrooms</a>
+                <a href="/showrooms.html">Bekijk al onze showrooms</a>
                 <img src='./assets/icons/arrows/dark-arrow.png' />
 
             </div>
@@ -287,8 +261,7 @@
         </div>
 
     </section>
-
-    <section class="blog-section">
+    <section class="blog-section section bright">
         <h3>Nieuwe Artikelen <br><span class="thin-font">Van Onze Blog</span></h3>
         <hr />
         <div class="blog-list">
@@ -297,12 +270,24 @@
 
     </section>
 
-    <footer>
+    <footer class="section dark">
 
 
     </footer>
 
+
     <script src='scripts/NavAndFooter.js'></script>
+    <script>
+        let links = document.querySelectorAll('.link');
+        links.forEach(link => {
+            if (link.id === "home" || link.id === "homeM") {
+                link.classList.add("active")
+            } else {
+                link.classList.remove("active")
+            }
+        })
+    </script>
+    <!-- <script src='scripts/circles.js'> </script> -->
     <script src="scripts/animations.js"></script>
     <script src='scripts/script.js'></script>
     <script src='scripts/getData.js'></script>

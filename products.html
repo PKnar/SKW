@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products</title>
+    <link href="index.css" rel='stylesheet' />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <link href="./css/products.css" rel='stylesheet' />
+
+</head>
+
+<body>
+    <!-- <div w3-include-html="/components/navigation.html"></div> -->
+    <!--Navbar is generated with JS-->
+    <main>
+        <nav></nav>
+    </main>
+
+    <header id='header' class="bright">
+        <!-- <div class="banner">Profiteer Nu Van 10% Korting Bij Aankoop Van EEN Finse Paneel Exclusive Of
+            Classic Sauna</div> -->
+        <!-- <div class='circles'>
+            <div class="circle-wrapper active">
+                <div class="circle-child"> </div>
+            </div>
+            <div class="circle-wrapper">
+                <div class="circle-child"> </div>
+            </div>
+            <div class="circle-wrapper">
+                <div class="circle-child"> </div>
+            </div>
+            <div class="circle-wrapper">
+                <div class="circle-child"> </div>
+            </div>
+            <div class="circle-wrapper">
+                <div class="circle-child"> </div>
+            </div>
+            <div class="circle-wrapper">
+                <div class="circle-child"> </div>
+            </div>
+
+        </div> -->
+
+        <div class='hero'>
+            <div class=" wrapper">
+                <h1>SaunaKoning Finnish Saunas</span>
+                </h1>
+                <p class="heroMessage">Profiteer Nu Van 10% Korting Bij Aankoop Van EEN Finse Paneel Exclusive Of
+                    Classic Sauna </p>
+            </div>
+
+        </div>
+        <div class="bg-image">
+            <div class="box left-box">
+            </div>
+            <div class="box  middle-box">
+
+            </div>
+            <div class="box   right-box">
+            </div>
+
+
+
+        </div>
+
+
+    </header>
+
+    <section class="products-section">
+
+        <div class="container">
+            <ul class="mini-navbar">
+                <li id='alle' class="active category ">ALLE</li>
+                <li id='binnen' class="category">BINNEN </li>
+                <li id='buiten' class="category">BUITEN </li>
+                <li id='maatwerk' class="category">MAATWERK </li>
+
+            </ul>
+            <div class="content">
+                <h4>Finse Saunas</h4>
+                <p class="catInfo">Een Finse sauna, een traditionele sauna, is ideaal voor echte levensgenieters.
+                    U kunt
+                    heerlijk
+                    genieten
+                    van
+                    de warmte, liggend of zittend op houten banken met diverse hoogtes. De temperatuur van de lucht in
+                    Finse
+                    sauna’s wordt erg hoog, soms tot wel 90 graden Celcius. U begint in een Finse sauna dus snel te
+                    zweten,
+                    waardoor bijvoorbeeld de doorbloeding wordt bevorderd en de hartprestatie wordt verhoogd. Even
+                    helemaal
+                    niets, alleen maar genieten!</p>
+
+                <button id='lees-meer'>Lees Meer</button>
+            </div>
+
+            <div class="select-wrapper">
+                <select id='sort'>
+                    <option selected disabled>Sort</option>
+                    <option>Newest</option>
+                    <option>Lowest Price</option>
+                    <option>Highest Price</option>
+                </select>
+                <select id='filter'>
+                    <option selected disabled>Filter in progress</option>
+
+
+                </select>
+            </div>
+            <div class='product-list'>
+
+
+            </div>
+        </div>
+
+
+    </section>
+    <section class="reference-section">
+        <div class="ref-container">
+            <h2>Recente reacties van klanten</h2>
+            <div class="ref-img"></div>
+            <h3>Infraroodsauna Exclusive 7R</h3>
+            <p>Van hemlock hout met full spectrum stralers. </p>
+
+        </div>
+
+    </section>
+
+
+    <section class="map-section">
+        <div id='map'>
+            <img src='./assets/images/global/map.png' />
+        </div>
+        <div class="showrooms">
+            <div class="info">
+                <h3>BEZOEK ONZE <br> <span class="accent-dark">SHOWROOMS</span></h3>
+                <p>Altijd een showroom dichtbij</p>
+
+                <ul>
+
+
+                    <li><a href='#'>Waalre</a></li>
+                    <li><a href='#'> Amersfoort</a></li>
+                    <li><a href='#'> Alphen a/d Rijn</a></li>
+                    <li><a href='#'> Wijchen</a></li>
+                    <li><a href='#'> Zeeland</a></li>
+                    <li><a href='#'> Zandhoven</a></li>
+                    <li><a href='#'> Waregem</a></li>
+                    <li><a href='#'> Genk</a></li>
+
+                </ul>
+
+
+            </div>
+            <div class="meer">
+                <a>Bekijk al onze showrooms</a>
+                <img src='./assets/icons/arrows/dark-arrow.png' />
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+
+    <footer>
+
+
+    </footer>
+
+    <script src='scripts/NavAndFooter.js'></script>
+    <script src='scripts/script.js'></script>
+    <script src='scripts/getDataProducts.js'></script>
+
+    <script>
+        const leesMeer = document.querySelector('#lees-meer');
+        const catInfo = document.querySelector('.catInfo');
+
+        leesMeer.addEventListener('click', (e) => {
+            catInfo.classList.toggle('expand')
+        })
+    </script>
+
+
+
+</body>
+
+</html>

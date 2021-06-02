@@ -21,8 +21,7 @@
     <h4>${blog.title}</h4>
     <p class="blog-preview"> ${blog.blog}</p>
     <div class="meer" >
-    <a>Meer  </a>
-    <img src='./assets/icons/arrows/dark-arrow.png' />
+    <a>Meer <img src="assets/icons/arrows/dark-arrow.png" />  </a>
     </div>
        </div>`;
 

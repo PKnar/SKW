@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="index.css" rel='stylesheet' />
+  <link rel="stylesheet" href="css/references.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;600;700;800&display=swap"
+    rel="stylesheet">
+  <script src="https://kit.fontawesome.com/05df4ecad1.js" crossorigin="anonymous"></script>
+  <script src="scripts/slider.js"></script>
+  <script src='scripts/refScript.js'></script>
+  <title>References</title>
+</head>
+
+<!-- main() load full javascript from script.js -->
+<!-- THESE ARGUMENTS IN setDotTexts() ARE THE CHANGING TEXTS OF POPULAR SECTION OF PAGE, CHANGE IT HERE TO TAKE EFFECT FULLY -->
+
+<body onload=" main(); setDotTexts('Combi sauna', 'Barrelsauna', 'Maatwerksauna'); test()"
+  onscroll="closeSliderOnScroll()">
+
+  <!--Navbar is generated with JS-->
+  <main>
+    <nav></nav>
+  </main>
+  <!-- Hero page -->
+  <header class="dark">
+    <div class="hero">
+      <!--Text conent of the hero page-->
+      <div class="textContent">
+        <h1>References</h1>
+        <p class="heroMessage">
+          Bekijk reactie van onze klanten!
+        </p>
+        <!-- <div class="readMore">
+          <a href="#">Leer meer</a>
+          <a href="#" class="arrowIcon"><svg xmlns="http://www.w3.org/2000/svg" width="294" height="22"
+              viewBox="0 0 294 22">
+              <g id="Group_234" data-name="Group 234" transform="translate(-235 -496)">
+                <line id="Line_7" data-name="Line 7" x2="70" transform="translate(235 509)" fill="none" stroke="#a26e4a"
+                  stroke-width="1" />
+                <text id="_" data-name="&gt;" transform="translate(298 496)" fill="#a26e4a" font-size="17"
+                  font-family="SegoeUI, Segoe UI">
+                  <tspan x="0" y="18">&gt;</tspan>
+                </text>
+              </g>
+            </svg>
+          </a>
+        </div> -->
+
+
+
+      </div>
+
+      <!--The glass box with news-->
+    </div>
+    <div class="transparentBox">
+      <div class="popularLeft">
+        <h4>POPULAR</h4>
+        <p class="changeText"></p>
+        <div class="dots">
+          <span class="firstdot dot1" onclick="onClickChange('firstdot', 'seconddot', 'thirddot', dotText1)"></span>
+          <span class="seconddot dot" onclick="onClickChange('seconddot', 'firstdot', 'thirddot', dotText2)"></span>
+          <span class="thirddot dot" onclick="onClickChange('thirddot', 'seconddot', 'firstdot', dotText3)"></span>
+        </div>
+      </div>
+
+      <div class="newsRight">
+        <div class="banner-text">
+          <h4>NEWS</h4>
+          <p>Alle showrooms zijn op <br /> afspraak geopend.</p>
+          <a href="#">Bekijk Showrooms</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Page with references -->
+  <div class="blogPage">
+    <h3 class="reftext">References..</h3>
+    <!--The sections with references-->
+    <div class="blogsDisplay">
+      <div class="singleBlog">
+
+        <div class="textOverPic"
+          onclick="openSlider(1, 'assets/images/ref/finish-sauna-indoor-1-inside-1.jpg', 'assets/images/ref/finish-sauna-indoor-2.jpg', 'assets/images/ref/finish-sauna-indoor-1.jpg')">
+          <img src="assets/images/ref/finish-sauna-indoor-1.jpg" alt="" class="imageBlog">
+          <div class="imgcount"><i class="far fa-image"></i>
+            <h1>3</h1>
+          </div></img>
+          <div class="textBlock">
+            <h3>Vlaardingen</h3>
+
+          </div>
+
+        </div>
+        <div class="bottom-content">
+          <p>Finse binnensauna paneel <br> Paneel Exclusive maatwerk</p>
+        </div>
+      </div>
+
+      <div class="singleBlog">
+        <div class="textOverPic"
+          onclick="openSlider(1, 'assets/images/ref/Combie-sauna-3.jpg', 'assets/images/ref/Combi-sauna-2.jpg', 'assets/images/ref/Combi-sauna-1.jpg')">
+          <img src="assets/images/ref/Combi-sauna-1.jpg" alt="" class="imageBlog">
+          <div class="imgcount"><i class="far fa-image"></i>
+            <h1>3</h1>
+          </div></img>
+          <div class="textBlock">
+            <h3>Tienen</h3>
+          </div>
+        </div>
+        <div class="bottom-content">
+          <p>Combi sauna <br> Combi Deluxe One</p>
+        </div>
+      </div>
+
+      <div class="singleBlog">
+        <div class="textOverPic"
+          onclick="openSlider(1, 'assets/images/ref/Barrelsauna-3.jpg', 'assets/images/ref/Barrelsauna-2.jpg', 'assets/images/ref/Barrelsauna-1.jpg')">
+          <img src="assets/images/ref/Barrelsauna-1.jpg" alt="" class="imageBlog">
+          <div class="imgcount"><i class="far fa-image"></i>
+            <h1>3</h1>
+          </div></img>
+          <div class="textBlock">
+            <h3>Deventer</h3>
+          </div>
+        </div>
+        <div class="bottom-content">
+          <p>Barrelsauna <br> Barrelsauna met dakshingles</p>
+        </div>
+      </div>
+
+      <div class="singleBlog">
+        <div class="textOverPic"
+          onclick="openSlider(1, 'assets/images/ref/binnensauna-paneel-1.jpg', 'assets/images/ref/binnensauna-paneel-2.jpg', 'assets/images/ref/binnensauna-paneel-3.jpg')">
+          <img src="assets/images/ref/binnensauna-paneel-3.jpg" alt="" class="imageBlog">
+          <div class="imgcount"><i class="far fa-image"></i>
+            <h1>3</h1>
+          </div></img>
+          <div class="textBlock">
+            <h3>Zeits</h3>
+          </div>
+        </div>
+        <div class="bottom-content">
+          <p>Finse binnensauna paneel <br> Paneel Classic met cilinder kachel</p>
+        </div>
+      </div>
+
+      <div class="singleBlog">
+        <div class="textOverPic"
+          onclick="openSlider(1, 'assets/images/ref/Finse-buitensauna-massief-3.jpg', 'assets/images/ref/Finse-buitensauna-massief-2.jpg', 'assets/images/ref/Finse-buitensauna-massief-1.jpg')">
+          <img src="assets/images/ref/Finse-buitensauna-massief-1.jpg" alt="" class="imageBlog">
+          <div class="imgcount"><i class="far fa-image"></i>
+            <h1>3</h1>
+          </div></img>
+          <div class="textBlock">
+            <h3>Waregem</h3>
+          </div>
+        </div>
+        <div class="bottom-content">
+          <p>Finse buitensauna massief <br> Massief buitensauna met panoramaraam</p>
+        </div>
+      </div>
+
+      <div class="singleBlog">
+        <div class="textOverPic"
+          onclick="openSlider(1, 'assets/images/ref/Maatwerksauna-3.jpg', 'assets/images/ref/Maatwerksauna-2.jpg', 'assets/images/ref/Maatwerksauna-1.jpg')">
+          <img src="assets/images/ref/Maatwerksauna-1.jpg" alt="" class="imageBlog">
+          <div class="imgcount"><i class="far fa-image"></i>
+            <h1>3</h1>
+          </div></img>
+          <div class="textBlock">
+            <h3>Zoersel</h3>
+          </div>
+        </div>
+        <div class="bottom-content">
+          <p>Maatwerksauna <br> Paneel Classic maatwerk met afschuining</p>
+        </div>
+      </div>
+
+    </div>
+    <!-- Button for opening more refereneces-->
+    <div class="openmorewrap openmorewrap2">
+      <div class="openmore" onclick="openMore()">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-down"
+          viewBox="0 0 16 16">
+          <path fill-rule="evenodd"
+            d="M8 1a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L7.5 13.293V1.5A.5.5 0 0 1 8 1z" />
+        </svg>
+      </div>
+    </div>
+  </div>
+
+  <!--Second page with references-->
+  <div class="blogPage blogPage2">
+    <!--The sections with references-->
+    <div class="blogsDisplay">
+      <div class="singleBlog">
+        <div class="textOverPic"
+          onclick="openSlider(1, 'assets/images/ref/Finse--binnensauna-paneel-3.jpg', 'assets/images/ref/Finse--binnensauna-paneel-2.png', 'assets/images/ref/Finse--binnensauna-paneel-1.jpg')">
+          <img src="assets/images/ref/Finse--binnensauna-paneel-1.jpg" alt="" class="imageBlog">
+          <div class="imgcount"><i class="far fa-image"></i>
+            <h1>3</h1>
+          </div></img>
+          <div class="textBlock">
+            <h3>Geldrop</h3>
+          </div>
+        </div>
+        <div class="bottom-content">
+          <p>Finse binnensauna paneel <br> Paneel Exclusive maatwerk</p>
+        </div>
+      </div>
+
+      <div class="singleBlog">
+        <div class="textOverPic"
+          onclick="openSlider(1, 'assets/images/ref/Maatwerksauna--3.jpg', 'assets/images/ref/Maatwerksauna--2.jpg', 'assets/images/ref/Maatwerksauna--1.png')">
+          <img src="assets/images/ref/Maatwerksauna--1.png" alt="" class="imageBlog">
+          <div class="imgcount"><i class="far fa-image"></i>
+            <h1>3</h1>
+          </div></img>
+          <div class="textBlock">
+            <h3>Eindhoven</h3>
+          </div>
+        </div>
+        <div class="bottom-content">
+          <p>Maatwerksauna <br> Maatwerksauna met giazen panelen</p>
+        </div>
+      </div>
+
+      <div class="singleBlog">
+        <div class="textOverPic"
+          onclick="openSlider(1, 'assets/images/ref/Barrelsauna-met-dakshingles-3.jpg', 'assets/images/ref/Barrelsauna-met-dakshingles-2.png', 'assets/images/ref/Barrelsauna-met-dakshingles-1.jpg')">
+          <img src="assets/images/ref/Barrelsauna-met-dakshingles-1.jpg" alt="" class="imageBlog">
+          <div class="imgcount"><i class="far fa-image"></i>
+            <h1>3</h1>
+          </div></img>
+          <div class="textBlock">
+            <h3>Bellegem</h3>
+          </div>
+        </div>
+        <div class="bottom-content">
+          <p>Barrelsauna met dakshingles</p>
+        </div>
+      </div>
+
+      <div class="singleBlog">
+        <div class="textOverPic"
+          onclick="openSlider(1, 'assets/images/ref/Finse-binnensauna-paneel--3.jpg', 'assets/images/ref/Finse-binnensauna-paneel--2.jpg', 'assets/images/ref/Finse-binnensauna-paneel--1.jpg')">
+          <img src="assets/images/ref/Finse-binnensauna-paneel--1.jpg" alt="" class="imageBlog">
+          <div class="imgcount"><i class="far fa-image"></i>
+            <h1>3</h1>
+          </div></img>
+          <div class="textBlock">
+            <h3>Boutersem</h3>
+          </div>
+        </div>
+        <div class="bottom-content">
+          <p>Finse binnensauna paneel <br> Paneel Exclusive Finse sauna</p>
+        </div>
+      </div>
+
+      <div class="singleBlog">
+        <div class="textOverPic"
+          onclick="openSlider(1, 'assets/images/ref/barrel-3.jfif', 'assets/images/ref/barrel-2.jpg', 'assets/images/ref/barrel-1.jpg')">
+          <img src="assets/images/ref/barrel-1.jpg" alt="" class="imageBlog">
+          <div class="imgcount"><i class="far fa-image"></i>
+            <h1>3</h1>
+          </div></img>
+          <div class="textBlock">
+            <h3>Nijlen</h3>
+          </div>
+        </div>
+        <div class="bottom-content">
+          <p>Barrelsauna <br> Barrelsauna met Full Spectrum infrarood straiers</p>
+        </div>
+      </div>
+
+      <div class="singleBlog">
+        <div class="textOverPic"
+          onclick="openSlider(1, 'assets/images/ref/Paneel-Classic-Maatwerksauna-3.jpg', 'assets/images/ref/Paneel-Classic-Maatwerksauna-2.jpg', 'assets/images/ref/Paneel-Classic-Maatwerksauna-1.jpg')">
+          <img src="assets/images/ref/Paneel-Classic-Maatwerksauna-1.jpg" alt="" class="imageBlog">
+          <div class="imgcount"><i class="far fa-image"></i>
+            <h1>3</h1>
+          </div></img>
+          <div class="textBlock">
+            <h3> Baarn</h3>
+          </div>
+        </div>
+        <div class="bottom-content">
+          <p>Maatwerksauna <br> Paneel Classic Maatwerksauna</p>
+        </div>
+      </div>
+    </div>
+    <div class="closemorewrap closemorewrap2">
+      <div class="closemore" onclick="closeMore()">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-up"
+          viewBox="0 0 16 16">
+          <path fill-rule="evenodd"
+            d="M8 15a.5.5 0 0 0 .5-.5V2.707l3.146 3.147a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L7.5 2.707V14.5a.5.5 0 0 0 .5.5z" />
+        </svg>
+      </div>
+    </div>
+  </div>
+
+
+  </div>
+
+  <footer>
+  </footer>
+  <script src='scripts/NavAndFooter.js'></script>
+  <script src="scripts/blogsScript.js"></script>
+  <div class="slideroverlay">
+    <div class="slidercontainer">
+
+      <div class="btncontainer">
+        <p id="closebtn" onclick="closeSlider()">Close</p>
+      </div>
+
+      <div class="imageslider">
+        <p id="add-after"></p>
+        <!-- Navigation arrows -->
+        <a class="left" onclick="nextSlide(-1)">❮</a>
+        <a class="right" onclick="nextSlide(1)">❯</a>
+      </div>
+
+    </div>
+  </div>
+  <script>
+    let links = document.querySelectorAll('.link');
+    links.forEach(link => {
+      if (link.id === "references" || link.id === "refM") {
+        link.classList.add("active")
+      } else {
+        link.classList.remove("active")
+      }
+    })
+  </script>
+
+  <body>
+
+
+</html>

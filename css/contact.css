@@ -1,0 +1,216 @@
+header {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(3, 3, 3, 0.8),
+      rgba(7, 7, 7, 0.8)
+    ),
+    url(../assets/images/contact/pexels-andrea-piacquadio-3860618.jpg);
+  height: 100vh;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+}
+
+header h2 {
+  color: white;
+  width: 70%;
+  text-align: center;
+  position: relative;
+}
+
+.hero {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner {
+  position: absolute;
+  bottom: 0;
+  padding: 2rem 0;
+  background: rgba(0, 0, 0, 0.404);
+  width: 100%;
+  display: flex;
+  color: whitesmoke;
+}
+
+.banner-text {
+  margin-left: 3rem;
+}
+
+.banner p {
+  font-size: 15px;
+  color: #a1a1a1;
+  margin: 0.5rem 0;
+}
+
+.banner a {
+  color: var(--accentBright);
+  text-decoration: none;
+}
+
+.form-section {
+  display: flex;
+  min-height: 100vh;
+}
+
+.black-container {
+  width: 30%;
+  background-color: #25262a;
+  min-height: 100vh;
+  min-width: 350px;
+}
+
+.info {
+  padding: 1.5rem 3rem;
+}
+
+.info h5 {
+  color: white;
+  margin: 2rem 0 1rem 0;
+}
+
+.info p,
+.info ul {
+  color: rgb(226, 226, 226);
+  font-size: 14px;
+}
+
+.info ul li {
+  margin: 0.5rem 0;
+}
+
+.info ul {
+  margin-bottom: 1.5rem;
+}
+
+.contact a {
+  color: var(--accentBright);
+  text-transform: uppercase;
+  font-size: 13px;
+  padding: 2rem 0;
+}
+
+section hr {
+  color: var(--accentBright);
+  height: 0.5px;
+  margin: 1rem;
+  width: 200px;
+}
+
+/* form section */
+
+form {
+  padding: 4rem 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+form input,
+select {
+  height: 35px;
+  min-width: 250px;
+}
+
+.container {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+label {
+  margin-bottom: 0.5rem;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+textarea {
+  width: 530px;
+  height: 250px;
+}
+
+form hr {
+  margin: 1rem;
+}
+
+form button {
+  padding: 0.6rem 2rem;
+  text-transform: uppercase;
+  background-color: black;
+  color: white;
+  border: none;
+  margin: 1rem;
+}
+
+.bold {
+  font-weight: 600;
+}
+
+.storing {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 80vh;
+  padding: 5rem 0;
+  background-color: #f5f5f5;
+}
+
+.storing p {
+  width: 50%;
+  min-width: 300px;
+  margin-bottom: 2rem;
+}
+
+@media (max-width: 700px) {
+  header h2 {
+    font-size: 18px;
+  }
+  section {
+    flex-direction: column;
+  }
+
+  .black-container,
+  form {
+    width: 100%;
+  }
+
+  .black-container {
+    display: flex;
+  }
+
+  .business {
+    margin-left: -7%;
+  }
+}
+
+@media (max-width: 550px) {
+  .black-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .business {
+    margin-left: 0px;
+  }
+  textarea {
+    width: 250px;
+  }
+}

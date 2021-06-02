@@ -1,0 +1,240 @@
+header {
+  background: linear-gradient(rgba(23, 23, 23, 0.9), rgba(23, 23, 23, 0.6)),
+    url(../assets/images/blogs/blog-bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 80vh;
+  position: relative;
+  color: white;
+  background-position: center;
+}
+
+/*Hero page*/
+.hero {
+  height: 80vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.textContent {
+  position: relative;
+  color: #d6d6d6;
+  left: 8%;
+}
+
+.dateHeroPage {
+  color: #9e9e9e;
+}
+
+.textContent h1 {
+  color: rgb(187, 187, 187);
+}
+
+.textContent p {
+  margin: 2rem 0;
+}
+
+.readMore {
+  display: flex;
+}
+
+.readMore a {
+  text-decoration: none;
+  color: var(--accentBright);
+  margin-right: 1rem;
+}
+
+/*glass effect box*/
+
+.transparentBox {
+  position: absolute;
+  bottom: 0px;
+  padding: 50px 0;
+  background: rgba(0, 0, 0, 0.404);
+  width: 100%;
+  display: flex;
+  min-height: 160px;
+  justify-content: space-between;
+}
+
+.popularLeft {
+  margin-left: 7%;
+}
+
+.popularLeft h4 {
+  margin-bottom: 10px;
+}
+
+.popularLeft p {
+  font-size: 15px;
+  color: #a1a1a1;
+}
+
+.dots {
+  padding: 15px 0;
+}
+
+.dot1 {
+  height: 10px;
+  width: 10px;
+  background-color: #efc862;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.dot {
+  height: 10px;
+  width: 10px;
+  background-color: #646464;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.newsRight {
+  position: relative;
+  margin-right: 7%;
+}
+
+.newsRight h4 {
+  padding-bottom: 10px;
+}
+
+.newsRight p {
+  font-size: 15px;
+  color: #a1a1a1;
+  padding-bottom: 10px;
+}
+.newsRight a {
+  color: var(--accentBright);
+  text-decoration: none;
+}
+
+/*the blogs part of the page*/
+
+.blogPage {
+  min-height: 100vh;
+  padding: 3rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.blogsDisplay {
+  display: flex;
+  margin-top: 50px;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.singleBlog {
+  width: calc(100% / 4);
+  min-width: 300px;
+  height: 100%;
+  margin: 2rem;
+}
+
+.textOverPic {
+  position: relative;
+}
+
+.textBlock {
+  position: absolute;
+  top: 45%;
+  text-align: center;
+  width: 100%;
+}
+
+.textBlock h3 {
+  color: white;
+}
+
+.imageBlog {
+  width: 100%;
+  object-fit: cover;
+  filter: brightness(40%);
+}
+
+.dateBlog {
+  color: grey;
+  font-size: 12px;
+  margin-top: 1rem;
+}
+
+.singleBlog h6 {
+  font-size: 10px;
+  color: grey;
+}
+
+.singleBlog p {
+  color: rgb(43, 43, 43);
+  margin: 1rem 0;
+  font-size: 15px;
+}
+
+.singleBlog a {
+  color: var(--accentDark);
+  text-decoration: none;
+}
+
+.numberedButtons {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  padding-top: 50px;
+}
+
+button {
+  padding: 0 20px;
+  border: none;
+  background-color: white;
+  color: var(--black);
+  cursor: pointer;
+}
+
+.circleButton {
+  border-radius: 50%;
+  background-color: rgb(202, 200, 200);
+  height: 40px;
+  width: 40px;
+  margin: 0 10px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.active-circle {
+  background-color: var(--accentDark);
+}
+
+.flex-row {
+  display: flex;
+}
+
+.lees-meer {
+  width: 450px;
+}
+
+.flex-row a {
+  margin-right: 1rem;
+}
+
+@media (max-width: 500px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  .textContent p {
+    font-size: 1rem;
+    width: 300px;
+  }
+
+  .transparentBox h4,
+  .transparentBox p {
+    font-size: 13px;
+  }
+}

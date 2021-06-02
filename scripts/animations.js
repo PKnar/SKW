@@ -28,7 +28,7 @@
       [a1, a2, a3, a4].forEach((a) => (a.style.animation = ""));
     }
 
-    if (scrollTop >= 2800) {
+    if (scrollTop >= 2000) {
       [acties, blog, about, catalogus].forEach(
         (el) => (el.style.animation = "move 1s forwards ease-out")
       );

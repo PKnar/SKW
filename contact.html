@@ -6,10 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Carrière Pagina</title>
-    <link rel="stylesheet" href="./css/careers.css">
+    <link rel="stylesheet" href="./css/contact.css">
     <link rel='stylesheet' href='index.css' />
-    <script src="https://kit.fontawesome.com/8d6e8b7bb5.js" crossorigin="anonymous">
-    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
@@ -21,21 +21,21 @@
 
     </main>
 
-    <header>
-        <div>
-            <h1>Heeft u een vraag of een opmerking? Neem dan contact op via onderstaand contactformulier. U krijgt
-                binnen twee werkdagen antwoord.</h1>
+    <header class='dark'>
+        <div class="hero">
+            <h2>Heeft u een vraag of een opmerking? Neem dan contact op via onderstaand contactformulier. U krijgt
+                binnen twee werkdagen antwoord.</h2>
         </div>
-        <div>
-            <div>
-                <h5>NEWS</h5>
-                <p>Alle showrooms zijn op afspraak geopend.</p>
-                <p><a>Leer meer</a></p>
+        <div class="banner">
+            <div class="banner-text">
+                <h4>NEWS</h4>
+                <p>Alle showrooms zijn op <br /> afspraak geopend.</p>
+                <a href="#">Bekijk Showrooms</a>
             </div>
         </div>
     </header>
-    <section>
-        <div>
+    <section class="form-section">
+        <div class="black-container">
             <div class="contact info">
                 <h5>Klantenservice</h5>
                 <hr />
@@ -52,13 +52,13 @@
                         <li> Zo: 11:00 - 17:00</li>
                     </ul>
                 </div>
-                <a href="#">BEKIJK ONS SHOWROOMS</a>
+                <a href="#">Bekijk ons showrooms</a>
             </div>
 
 
 
 
-            <div class="bussiness info ">
+            <div class="business info ">
                 <h5>Bedrijfsgegevens</h5>
                 <hr />
                 <div>
@@ -89,8 +89,95 @@
         </div>
 
         <form>
+            <h3> Contact Formulier</h3>
+            <hr>
+            <div class="container">
+                <div class="row">
+                    <div class="column">
+                        <label>Betreft *</label>
+                        <select>
+                            <option selected>Brochure aanvrag</option>
+                            <option>Contact</option>
+                            <option>Afspraak Maken</option>
+                        </select>
+                    </div>
+
+                    <div class="column">
+                        <label>Naam *</label>
+                        <input type='text' required />
+                    </div>
+
+                </div>
+                <div class="row">
+                    <div class="column">
+                        <label>E-mailadres *</label>
+                        <input type='text' required />
+                    </div>
+                    <div class="column">
+                        <label> Telefoonnummer *</label>
+                        <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+                    </div>
+
+                </div>
+
+                <div class="row">
+                    <div class="column"> <label> Adress </label>
+                        <input type="text">
+                    </div>
+                    <div class="column">
+                        <label> Postcode </label>
+                        <input type="text">
+                    </div>
+
+                </div>
+
+                <div class="row">
+
+                    <div class="column">
+                        <label> Woonplaats </label>
+                        <input type="text">
+                    </div>
+                    <div class="column">
+                        <label>Land *</label>
+                        <select required>
+                            <option selected>Nederland</option>
+                            <option>Belgie</option>
+                            <option>Overige</option>
+                        </select>
+                    </div>
+
+                </div>
+
+                <div class="column">
+                    <label>Uw bericht*</label>
+                    <textarea required></textarea>
+
+                </div>
+
+                <button>Verstuur</button>
+            </div>
 
         </form>
+
+    </section>
+    <section class="storing">
+
+        <h1>Storing</h1>
+        <hr>
+        <p>Als u uw storing online meldt dan zullen wij deze zo snel mogelijk in behandeling nemen. Het invullen
+            duurt
+            slechts 2 minuten en uw storing staat direct verwerkt in ons systeem. U kunt uw storing hier melden.
+
+        </p>
+        <p>
+            Als u een defect onderdeel heeft, download dan hier het garantieformulier, vul deze in en stuur uw
+            onderdeel
+            met het ingevulde garantie formulier naar ons terug.</p>
+        <p><span class="bold">LET OP :</span> in het weekend is ons magazijn gesloten. Helaas kunnen wij dan geen
+            producten
+            omwisselen of
+            versturen. onze excuses voor het ongemak!</p>
+
 
     </section>
 
@@ -99,6 +186,16 @@
     </footer>
     <script src='scripts/NavAndFooter.js'></script>
     <script src='scripts/script.js'></script>
+    <script>
+        let links = document.querySelectorAll('.link');
+        links.forEach(link => {
+            if (link.id === "contact" || link.id === "contactM") {
+                link.classList.add("active")
+            } else {
+                link.classList.remove("active")
+            }
+        })
+    </script>
 </body>
 
 </html>

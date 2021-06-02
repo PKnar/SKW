@@ -20,32 +20,32 @@
   </main>
 
   <!-- Header (logo, navbar, menus, heading, links) -->
-  <header>
-    <header>
-      <div class="hero">
-        <h1> ABOUT US </h1>
-        <p>Our mission is to be a create a great customer experiece and be a trusted company in health and wellness
-          sector!</p>
+
+  <header class="dark">
+    <div class="hero">
+      <h1> ABOUT US </h1>
+      <p>Our mission is to be a create a great customer experiece and be a trusted company in health and wellness
+        sector!</p>
+    </div>
+
+
+
+    <div class="transparentBox">
+      <div class="refLeft banner">
+        <h4>REFERENCES</h4>
+        <p>Belijk onze references</p>
+        <a href="#">Lees Meer</a>
       </div>
 
-
-
-      <div class="transparentBox">
-        <div class="refLeft banner">
-          <h4>REFERENCES</h4>
-          <p>Belijk onze references</p>
-          <a href="#">Lees Meer</a>
-        </div>
-
-        <div class="newsRight banner">
-          <h4>NEWS</h4>
-          <p>Alle showrooms zijn op <br> afspraak geopend.</p>
-          <a href="#">Lees Meer</a>
-        </div>
+      <div class="newsRight banner">
+        <h4>NEWS</h4>
+        <p>Alle showrooms zijn op <br> afspraak geopend.</p>
+        <a href="#">Lees Meer</a>
       </div>
-    </header>
-
+    </div>
   </header>
+
+
   <!-- End of header.-->
 
   <!-- Main content -->
@@ -91,13 +91,13 @@
   <section id="team">
     <h2>ONZE TEAM</h2>
     <div id="team1">
-      <img class="teammemberleft" src="./assets/images/about/team/woman1.png" alt="Team member">
+      <img class="teammemberleft teammember" src="./assets/images/about/team/woman1.png" alt="Team member">
       <img class="teammember" src="./assets/images/about/team/man1.png" alt="Team member">
       <img class="teammember" src="./assets/images/about/team/man2.png" alt="Team member">
       <img class="teammember" src="./assets/images/about/team/woman2.png" alt="Team member">
     </div>
     <div id="team2">
-      <img class="teammemberleft" src="./assets/images/about/team/man3.png" alt="Team member">
+      <img class="teammemberleft teammember" src="./assets/images/about/team/man3.png" alt="Team member">
       <img class="teammember" src="./assets/images/about/team/woman3.png" alt="Team member">
       <img class="teammember" src="./assets/images/about/team/man4.png" alt="Team member">
       <img class="teammember" src="./assets/images/about/team/man5.png" alt="Team member">
@@ -131,7 +131,7 @@
   <div id="hiringwrapper">
     <section id="hiring">
       <h1>WE ARE HIRING!</h1>
-      <button><a href='https://pknar.github.io/SKW/careers.html'>BEKIJK</a></button>
+      <button><a href='/careers.html'>BEKIJK</a></button>
     </section>
   </div>
   <!-- End of hiring section. -->
@@ -224,6 +224,16 @@
   <script src='scripts/NavAndFooter.js'></script>
   <script src='scripts/script.js'></script>
   <script src='scripts/about.js'></script>
+  <script>
+    let links = document.querySelectorAll('.link');
+    links.forEach(link => {
+      if (link.id === "about" || link.id === "aboutM") {
+        link.classList.add("active")
+      } else {
+        link.classList.remove("active")
+      }
+    })
+  </script>
 </body>
 
 </html>

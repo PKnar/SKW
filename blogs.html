@@ -19,7 +19,7 @@
     <nav></nav>
   </main>
   <!-- Hero page -->
-  <header>
+  <header class="dark">
     <div class="hero">
       <!--Text conent of the hero page-->
       <div class="textContent">
@@ -111,17 +111,7 @@
           <p>Heerlijk genieten van een eigen sauna aan huis, dat willen we allemaal wel. Een ‘kant-en-klare’ sauna kopen
           <div class="flex-row lees-meer">
             <a href="#">Lees Meer</a>
-            <a href="#" ?><svg xmlns="http://www.w3.org/2000/svg" width="294" height="22" viewBox="0 0 294 22">
-                <g id="Group_234" data-name="Group 234" transform="translate(-235 -496)">
-                  <line id="Line_7" data-name="Line 7" x2="70" transform="translate(235 509)" fill="none"
-                    stroke="#a26e4a" stroke-width="1" />
-                  <text id="_" data-name="&gt;" transform="translate(298 496)" fill="#a26e4a" font-size="17"
-                    font-family="SegoeUI, Segoe UI">
-                    <tspan x="0" y="18">&gt;</tspan>
-                  </text>
-                </g>
-              </svg>
-            </a>
+
           </div>
 
         </div>
@@ -142,17 +132,7 @@
             kan natuurlijk altijd, </p>
           <div class="flex-row lees-meer">
             <a href="#">Lees Meer</a>
-            <a href="#" ?><svg xmlns="http://www.w3.org/2000/svg" width="294" height="22" viewBox="0 0 294 22">
-                <g id="Group_234" data-name="Group 234" transform="translate(-235 -496)">
-                  <line id="Line_7" data-name="Line 7" x2="70" transform="translate(235 509)" fill="none"
-                    stroke="#a26e4a" stroke-width="1" />
-                  <text id="_" data-name="&gt;" transform="translate(298 496)" fill="#a26e4a" font-size="17"
-                    font-family="SegoeUI, Segoe UI">
-                    <tspan x="0" y="18">&gt;</tspan>
-                  </text>
-                </g>
-              </svg>
-            </a>
+
           </div>
         </div>
       </div>
@@ -172,17 +152,7 @@
             kan natuurlijk altijd, </p>
           <div class="flex-row lees-meer">
             <a href="#">Lees Meer</a>
-            <a href="#" ?><svg xmlns="http://www.w3.org/2000/svg" width="294" height="22" viewBox="0 0 294 22">
-                <g id="Group_234" data-name="Group 234" transform="translate(-235 -496)">
-                  <line id="Line_7" data-name="Line 7" x2="70" transform="translate(235 509)" fill="none"
-                    stroke="#a26e4a" stroke-width="1" />
-                  <text id="_" data-name="&gt;" transform="translate(298 496)" fill="#a26e4a" font-size="17"
-                    font-family="SegoeUI, Segoe UI">
-                    <tspan x="0" y="18">&gt;</tspan>
-                  </text>
-                </g>
-              </svg>
-            </a>
+
           </div>
         </div>
       </div>
@@ -202,17 +172,7 @@
             kan natuurlijk altijd, </p>
           <div class="flex-row lees-meer">
             <a href="#">Lees Meer</a>
-            <a href="#" ?><svg xmlns="http://www.w3.org/2000/svg" width="294" height="22" viewBox="0 0 294 22">
-                <g id="Group_234" data-name="Group 234" transform="translate(-235 -496)">
-                  <line id="Line_7" data-name="Line 7" x2="70" transform="translate(235 509)" fill="none"
-                    stroke="#a26e4a" stroke-width="1" />
-                  <text id="_" data-name="&gt;" transform="translate(298 496)" fill="#a26e4a" font-size="17"
-                    font-family="SegoeUI, Segoe UI">
-                    <tspan x="0" y="18">&gt;</tspan>
-                  </text>
-                </g>
-              </svg>
-            </a>
+
           </div>
         </div>
       </div>
@@ -232,17 +192,7 @@
             kan natuurlijk altijd, </p>
           <div class="flex-row lees-meer">
             <a href="#">Lees Meer</a>
-            <a href="#" ?><svg xmlns="http://www.w3.org/2000/svg" width="294" height="22" viewBox="0 0 294 22">
-                <g id="Group_234" data-name="Group 234" transform="translate(-235 -496)">
-                  <line id="Line_7" data-name="Line 7" x2="70" transform="translate(235 509)" fill="none"
-                    stroke="#a26e4a" stroke-width="1" />
-                  <text id="_" data-name="&gt;" transform="translate(298 496)" fill="#a26e4a" font-size="17"
-                    font-family="SegoeUI, Segoe UI">
-                    <tspan x="0" y="18">&gt;</tspan>
-                  </text>
-                </g>
-              </svg>
-            </a>
+
           </div>
         </div>
       </div>
@@ -262,17 +212,7 @@
             kan natuurlijk altijd, </p>
           <div class="flex-row lees-meer">
             <a href="#">Lees Meer</a>
-            <a href="#" ?><svg xmlns="http://www.w3.org/2000/svg" width="294" height="22" viewBox="0 0 294 22">
-                <g id="Group_234" data-name="Group 234" transform="translate(-235 -496)">
-                  <line id="Line_7" data-name="Line 7" x2="70" transform="translate(235 509)" fill="none"
-                    stroke="#a26e4a" stroke-width="1" />
-                  <text id="_" data-name="&gt;" transform="translate(298 496)" fill="#a26e4a" font-size="17"
-                    font-family="SegoeUI, Segoe UI">
-                    <tspan x="0" y="18">&gt;</tspan>
-                  </text>
-                </g>
-              </svg>
-            </a>
+
           </div>
         </div>
       </div>
@@ -286,6 +226,16 @@
   <script src='scripts/NavAndFooter.js'></script>
   <script src='scripts/script.js'></script>
   <script src="scripts/blogsScript.js"></script>
+  <script>
+    let links = document.querySelectorAll('.link');
+    links.forEach(link => {
+      if (link.id === "blog" || link.id === "blogM") {
+        link.classList.add("active")
+      } else {
+        link.classList.remove("active")
+      }
+    })
+  </script>
 
 </body>
 

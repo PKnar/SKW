@@ -1,0 +1,218 @@
+header {
+  background: linear-gradient(
+      to right,
+      rgba(23, 23, 23, 0.952) 40%,
+      rgba(23, 23, 23, 0.6)
+    ),
+    url(../assets/images/ref/barrel-1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 110vh;
+  position: relative;
+  color: white;
+  background-position: center;
+}
+
+/*Hero page*/
+.hero {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.textContent {
+  position: relative;
+  color: #d6d6d6;
+  left: 8%;
+}
+
+.textContent h1 {
+  color: rgb(187, 187, 187);
+}
+
+.textContent p {
+  margin: 2rem 0;
+}
+
+.readMore {
+  display: flex;
+}
+
+.readMore a {
+  text-decoration: none;
+  color: var(--accentBright);
+  margin-right: 1rem;
+}
+
+.popularLeft a {
+  text-decoration: none;
+  color: var(--accentBright);
+  font-size: 13px;
+}
+
+.popularLeft p {
+  margin: 1rem 0;
+}
+
+/* circles */
+
+.circles {
+  position: absolute;
+  z-index: 99999;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.circles .circle-child {
+  width: 5px;
+  height: 5px;
+  background-color: rgb(151, 151, 151);
+  font-size: 3rem;
+  border-radius: 100%;
+}
+
+.circle-wrapper {
+  border-radius: 100%;
+  padding: 0.6rem;
+  margin: 0.1rem 2rem;
+}
+
+.circles .active {
+  border: 1px solid white;
+}
+
+/*glass effect box*/
+
+.transparentBox {
+  position: absolute;
+  bottom: 0px;
+  padding: 50px 0;
+  background: rgba(0, 0, 0, 0.404);
+  width: 100%;
+  display: flex;
+  min-height: 160px;
+  justify-content: space-between;
+}
+
+.popularLeft {
+  margin-left: 7%;
+}
+
+.popularLeft h4 {
+  margin-bottom: 10px;
+}
+
+.popularLeft p {
+  font-size: 15px;
+  color: #a1a1a1;
+}
+
+.newsRight {
+  position: relative;
+  margin-right: 7%;
+}
+
+.newsRight h4 {
+  padding-bottom: 10px;
+}
+
+.newsRight p {
+  font-size: 15px;
+  color: #a1a1a1;
+  padding-bottom: 10px;
+}
+.newsRight a {
+  color: var(--accentBright);
+  text-decoration: none;
+}
+
+/*the acties part of the page*/
+
+.actiesDisplay {
+  display: flex;
+  margin-top: 10vh;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  padding-bottom: 5rem;
+}
+
+.singleActie {
+  width: calc(100% / 4);
+  min-width: 300px;
+  height: 100%;
+  margin: 2rem;
+}
+
+.textOverPic {
+  position: relative;
+}
+
+.textBlock {
+  position: absolute;
+  top: 45%;
+  text-align: center;
+  width: 100%;
+}
+
+.textBlock h3 {
+  color: white;
+}
+
+.imageActie {
+  width: 100%;
+  object-fit: cover;
+  filter: brightness(40%);
+}
+
+.singleActie h4 {
+  color: #6a6680;
+  font-family: Montserrat;
+  margin-top: 1rem;
+}
+
+.singleActie p {
+  color: #6a6680;
+  margin: 1rem 0;
+  font-size: 14px;
+  font-family: Montserrat;
+}
+
+.singleActie a {
+  color: var(--accentDark);
+  text-decoration: none;
+  font-size: 14px;
+  margin-top: 1rem;
+}
+
+.flex-row {
+  display: flex;
+  width: 150%;
+}
+
+.lees-meer {
+  width: 450px;
+}
+
+.flex-row a {
+  margin-right: 1rem;
+}
+
+@media (max-width: 500px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  .textContent p {
+    font-size: 1rem;
+    width: 300px;
+  }
+
+  .transparentBox h4,
+  .transparentBox p {
+    font-size: 13px;
+  }
+}
