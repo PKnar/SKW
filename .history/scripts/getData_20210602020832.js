@@ -18,11 +18,10 @@
     blogs.forEach((blog) => {
       let html = `<div id= ${blog.id} class="blog-post">
     <p class="dates">${blog.date}</p>
-    <div class='blog-cover'>  <h4>${blog.title}</h4> </div>
+    <h4>${blog.title}</h4>
     <p class="blog-preview"> ${blog.blog}</p>
     <div class="meer" >
-    <a>Meer  </a>
-    <img src='https://pknar.github.io/SKW/assets/icons/arrows/dark-arrow.png' />
+    <a>Meer <img src="assets/icons/arrows/dark-arrow.png" />  </a>
     </div>
        </div>`;
 

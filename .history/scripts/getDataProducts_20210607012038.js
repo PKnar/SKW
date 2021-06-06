@@ -73,7 +73,7 @@
 
         card.innerHTML += `
      
-          <img src='https://pknar.github.io/SKW/assets/images/saunas/regular/${randomNumber}.jpg' />
+          <img src='https://pknar.github.io/SKW//assets/images/saunas/regular/${randomNumber}.jpg' />
           <h5>${product.name}</h5>
           <p>${product.specifications.afmeting} cm
   

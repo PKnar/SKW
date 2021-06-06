@@ -21,27 +21,27 @@
     let logo = document.createElement("img");
     let header = document.querySelector("header");
     let iconsHTML;
-    let logoSrc = `${baseURL}/assets/logo/white.png`;
+    let logoSrc = "./assets/logo/white.png";
 
     desktopNav.setAttribute("class", "desktop-nav");
     navLinks.setAttribute("class", "nav-links");
 
     if (header.classList.contains("dark")) {
-      logoSrc = `${baseURL}/assets/logo/white.png`;
+      logoSrc = "./assets/logo/white.png";
 
       iconsHTML = ` 
     <ul class="nav-icons">
-      <li><img src="https://pknar.github.io/SKW/assets/icons/search.png" /></li>
-      <li><img src="https://pknar.github.io/SKW/assets/icons/user.png" /></li>
-      <li><img src="https://pknar.github.io/SKW/assets/icons/shopping-bag.png" /></li>
+      <li><img src="assets/icons/search.png" /></li>
+      <li><img src="assets/icons/user.png" /></li>
+      <li><img src="assets/icons/shopping-bag.png" /></li>
     </ul>`;
     } else {
       logoSrc = "./assets/logo/black.png";
       iconsHTML = ` 
          <ul class="nav-icons">
-              <li><img src="https://pknar.github.io/SKW/assets/icons/search-black.png" /></li>
-              <li><img src="https://pknar.github.io/SKW/assets/icons/user-black.png" /></li>
-             <li><img src="https://pknar.github.io/SKW/assets/icons/shopping-bag-black.png" /></li>
+              <li><img src="assets/icons/search-black.png" /></li>
+              <li><img src="assets/icons/user-black.png" /></li>
+             <li><img src="assets/icons/shopping-bag-black.png" /></li>
         </ul>`;
     }
 
@@ -82,14 +82,14 @@
               </div>
   
               <ul class="nav-links close ">
-                  <li class='link' id="homeM"><a  href="https://pknar.github.io/SKW/index.html">Home </a></li>
-                  <li  class='link' id="actiesM"><a href="https://pknar.github.io/SKW/acties.html">Acties </a></li>
-                  <li class='link' id="webshopM" ><a href="https://pknar.github.io/SKW/webshop.html">Webshop </a></li>
-                  <li  class='link' id="showroomsM" ><a href="https://pknar.github.io/SKW/showrooms.html">Showrooms </a></li>
-                  <li  class='link' id="blogM" ><a href="https://pknar.github.io/SKW/blogs.html">Blog </a></li>
-                  <li class='link' id="aboutM" ><a href="https://pknar.github.io/SKW/about.html">About </a></li>
-                  <li class='link' id="contactM"  ><a href="https://pknar.github.io/SKW/contact.html">Contact </a></li>
-                  <li class='link' id="refM"  ><a href="https://pknar.github.io/SKW/references.html">References</a></li>
+                  <li class='link' id="homeM"><a  href="/index.html">Home </a></li>
+                  <li  class='link' id="actiesM"><a href="/acties.html">Acties </a></li>
+                  <li class='link' id="webshopM" ><a href="/webshop.html">Webshop </a></li>
+                  <li  class='link' id="showroomsM" ><a href="/showrooms.html">Showrooms </a></li>
+                  <li  class='link' id="blogM" ><a href="/blogs.html">Blog </a></li>
+                  <li class='link' id="aboutM" ><a href="/about.html">About </a></li>
+                  <li class='link' id="contactM"  ><a href="/contact.html">Contact </a></li>
+                  <li class='link' id="refM"  ><a href="/references.html">References</a></li>
                   <li class='link'><a href="#">Wij verkopen ook</a></li>
               </ul>
   
@@ -99,7 +99,7 @@
 
     //     let html = `
     //     <div class="desktop-nav">
-    //     <img class="logo" alt='Saunakoning logo' src=`${baseURL}/assets/logo/white.png` />
+    //     <img class="logo" alt='Saunakoning logo' src='./assets/logo/white.png' />
     //     <ul class="nav-links ">
 
     //     ${navLinks
@@ -115,12 +115,12 @@
     // <div class="mobile-nav">
 
     // <ul class="nav-icons">
-    // <li><img src="https://pknar.github.io/SKW/assets/icons/shopping-bag.png" /></li>
-    //     <li><img src="https://pknar.github.io/SKW/assets/icons/user.png" /></li>
-    //     <li><img src="https://pknar.github.io/SKW/assets/icons/search.png" /></li>
+    // <li><img src="assets/icons/shopping-bag.png" /></li>
+    //     <li><img src="assets/icons/user.png" /></li>
+    //     <li><img src="assets/icons/search.png" /></li>
     //     </ul>
 
-    // <img class="mobile-logo" alt='Saunakoning logo' src=`${baseURL}/assets/logo/white.png` />
+    // <img class="mobile-logo" alt='Saunakoning logo' src='./assets/logo/white.png' />
     //     <div class="container-column">
     //         <div class="burger-menu">
     //             <div class="line top-line"></div>
@@ -153,22 +153,22 @@
   function generateFooter() {
     let footer = document.querySelector("footer");
     let html = ` 
-      <img class="footer-logo" src=${baseURL}/assets/logo/white.png />
+      <img class="footer-logo" src='./assets/logo/white.png' />
           <p class="footer-message">Bel direct voor persoonlijk advies of bezoek onze showroom.</p>
           <div class="socials">
   
-              <img src='https://pknar.github.io/SKW/assets/icons/socials-contacts/facebook.png' />
-              <img src='https://pknar.github.io/SKW/assets/icons/socials-contacts/instagram.png' />
+              <img src='./assets/icons/socials-contacts/facebook.png' />
+              <img src='./assets/icons/socials-contacts/instagram.png' />
               <div class="vertical-line"></div>
               <div class="flex-row">
-                  <img src='https://pknar.github.io/SKW/assets/icons/socials-contacts/email.png' />
+                  <img src='./assets/icons/socials-contacts/email.png' />
                   <p>Contact</p>
               </div>
   
           </div>
           <hr>
           <div class="footer-contact">
-              <img src='https://pknar.github.io/SKW/assets/icons/socials-contacts/call.png' />
+              <img src='./assets/icons/socials-contacts/call.png' />
               <div class="tel-numbers">
                   <p> NL <a href="tel:040 - 707 45 49">040 - 707 45 49</a></p>
                   <p> BE <a href="tel:033 367 4575">033 367 4575</a></p>
@@ -203,16 +203,16 @@
   
   
           </div>
-          <img class="rating" src="https://pknar.github.io/SKW/assets/icons/Rating-grey.png" />
+          <img class="rating" src="./assets/icons/Rating-grey.png" />
           <div class="payments">
               <a href="#">Bekijk het saunamagazine</a>
               <div class="payment-icons">
-                  <img src="https://pknar.github.io/SKW/assets/icons/payments/ideal.png" />
-                  <img src="https://pknar.github.io/SKW/assets/icons/payments/mastercard(1).png" />
-                  <img src="https://pknar.github.io/SKW/assets/icons/payments/mastercard.png" />
-                  <img src="https://pknar.github.io/SKW/assets/icons/payments/visa.png" />
-                  <img src="https://pknar.github.io/SKW/assets/icons/payments/paypal.png" />
-                  <img src="https://pknar.github.io/SKW/assets/icons/payments/bancontact-logo_0.png" />
+                  <img src="./assets/icons/payments/ideal.png" />
+                  <img src="./assets/icons/payments/mastercard(1).png" />
+                  <img src="./assets/icons/payments/mastercard.png" />
+                  <img src="./assets/icons/payments/visa.png" />
+                  <img src="./assets/icons/payments/paypal.png" />
+                  <img src="./assets/icons/payments/bancontact-logo_0.png" />
               </div>
           </div>`;
 

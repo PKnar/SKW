@@ -22,7 +22,7 @@
     <p class="blog-preview"> ${blog.blog}</p>
     <div class="meer" >
     <a>Meer  </a>
-    <img src='https://pknar.github.io/SKW/assets/icons/arrows/dark-arrow.png' />
+    <img src='https://pknar.github.io/SKW//assets/icons/arrows/dark-arrow.png' />
     </div>
        </div>`;
 

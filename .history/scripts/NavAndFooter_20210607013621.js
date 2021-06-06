@@ -153,7 +153,7 @@
   function generateFooter() {
     let footer = document.querySelector("footer");
     let html = ` 
-      <img class="footer-logo" src=${baseURL}/assets/logo/white.png />
+      <img class="footer-logo" src=`${baseURL}/assets/logo/white.png` />
           <p class="footer-message">Bel direct voor persoonlijk advies of bezoek onze showroom.</p>
           <div class="socials">
   
@@ -203,16 +203,16 @@
   
   
           </div>
-          <img class="rating" src="https://pknar.github.io/SKW/assets/icons/Rating-grey.png" />
+          <img class="rating" src="./https://pknar.github.io/SKW/assets/icons/Rating-grey.png" />
           <div class="payments">
               <a href="#">Bekijk het saunamagazine</a>
               <div class="payment-icons">
-                  <img src="https://pknar.github.io/SKW/assets/icons/payments/ideal.png" />
-                  <img src="https://pknar.github.io/SKW/assets/icons/payments/mastercard(1).png" />
-                  <img src="https://pknar.github.io/SKW/assets/icons/payments/mastercard.png" />
-                  <img src="https://pknar.github.io/SKW/assets/icons/payments/visa.png" />
-                  <img src="https://pknar.github.io/SKW/assets/icons/payments/paypal.png" />
-                  <img src="https://pknar.github.io/SKW/assets/icons/payments/bancontact-logo_0.png" />
+                  <img src="./https://pknar.github.io/SKW/assets/icons/payments/ideal.png" />
+                  <img src="./https://pknar.github.io/SKW/assets/icons/payments/mastercard(1).png" />
+                  <img src="./https://pknar.github.io/SKW/assets/icons/payments/mastercard.png" />
+                  <img src="./https://pknar.github.io/SKW/assets/icons/payments/visa.png" />
+                  <img src="./https://pknar.github.io/SKW/assets/icons/payments/paypal.png" />
+                  <img src="./https://pknar.github.io/SKW/assets/icons/payments/bancontact-logo_0.png" />
               </div>
           </div>`;
 

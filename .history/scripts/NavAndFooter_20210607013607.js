@@ -153,22 +153,22 @@
   function generateFooter() {
     let footer = document.querySelector("footer");
     let html = ` 
-      <img class="footer-logo" src=${baseURL}/assets/logo/white.png />
+      <img class="footer-logo" src=`${baseURL}/assets/logo/white.png` />
           <p class="footer-message">Bel direct voor persoonlijk advies of bezoek onze showroom.</p>
           <div class="socials">
   
-              <img src='https://pknar.github.io/SKW/assets/icons/socials-contacts/facebook.png' />
-              <img src='https://pknar.github.io/SKW/assets/icons/socials-contacts/instagram.png' />
+              <img src='./https://pknar.github.io/SKW/assets/icons/socials-contacts/facebook.png' />
+              <img src='./https://pknar.github.io/SKW/assets/icons/socials-contacts/instagram.png' />
               <div class="vertical-line"></div>
               <div class="flex-row">
-                  <img src='https://pknar.github.io/SKW/assets/icons/socials-contacts/email.png' />
+                  <img src='./https://pknar.github.io/SKW/assets/icons/socials-contacts/email.png' />
                   <p>Contact</p>
               </div>
   
           </div>
           <hr>
           <div class="footer-contact">
-              <img src='https://pknar.github.io/SKW/assets/icons/socials-contacts/call.png' />
+              <img src='./https://pknar.github.io/SKW/assets/icons/socials-contacts/call.png' />
               <div class="tel-numbers">
                   <p> NL <a href="tel:040 - 707 45 49">040 - 707 45 49</a></p>
                   <p> BE <a href="tel:033 367 4575">033 367 4575</a></p>
@@ -203,16 +203,16 @@
   
   
           </div>
-          <img class="rating" src="https://pknar.github.io/SKW/assets/icons/Rating-grey.png" />
+          <img class="rating" src="./https://pknar.github.io/SKW/assets/icons/Rating-grey.png" />
           <div class="payments">
               <a href="#">Bekijk het saunamagazine</a>
               <div class="payment-icons">
-                  <img src="https://pknar.github.io/SKW/assets/icons/payments/ideal.png" />
-                  <img src="https://pknar.github.io/SKW/assets/icons/payments/mastercard(1).png" />
-                  <img src="https://pknar.github.io/SKW/assets/icons/payments/mastercard.png" />
-                  <img src="https://pknar.github.io/SKW/assets/icons/payments/visa.png" />
-                  <img src="https://pknar.github.io/SKW/assets/icons/payments/paypal.png" />
-                  <img src="https://pknar.github.io/SKW/assets/icons/payments/bancontact-logo_0.png" />
+                  <img src="./https://pknar.github.io/SKW/assets/icons/payments/ideal.png" />
+                  <img src="./https://pknar.github.io/SKW/assets/icons/payments/mastercard(1).png" />
+                  <img src="./https://pknar.github.io/SKW/assets/icons/payments/mastercard.png" />
+                  <img src="./https://pknar.github.io/SKW/assets/icons/payments/visa.png" />
+                  <img src="./https://pknar.github.io/SKW/assets/icons/payments/paypal.png" />
+                  <img src="./https://pknar.github.io/SKW/assets/icons/payments/bancontact-logo_0.png" />
               </div>
           </div>`;
 

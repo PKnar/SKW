@@ -153,7 +153,7 @@
   function generateFooter() {
     let footer = document.querySelector("footer");
     let html = ` 
-      <img class="footer-logo" src=${baseURL}/assets/logo/white.png />
+      <img class="footer-logo" src=`${baseURL}/assets/logo/white.png` />
           <p class="footer-message">Bel direct voor persoonlijk advies of bezoek onze showroom.</p>
           <div class="socials">
   

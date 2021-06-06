@@ -105,7 +105,7 @@
 
   showrooms.forEach(
     (showroom) =>
-      (showroomMenu.innerHTML += `<li><a class="showroom-link" id=${showroom.id} href='https://pknar.github.io/SKW/singleShowroom.html'>${showroom.location}</a></li>`)
+      (showroomMenu.innerHTML += `<li><a class="showroom-link" id=${showroom.id} href='/singleShowroom.html'>${showroom.location}</a></li>`)
   );
 
   let hrefs = document.querySelectorAll(".showroom-link");
