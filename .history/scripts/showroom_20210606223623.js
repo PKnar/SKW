@@ -110,7 +110,7 @@
     showrooms.forEach((showroom) => {
       let html = ` <div class="showroomContainer">
       <div class="imageContainer">
-        <img src="https://pknar.github.io/SKW/assets/images/showroom/welvaere-germany-showroom-1-2-768x512.jpg" alt="Picture of showroom">
+        <img src="../assets/images/showroom/welvaere-germany-showroom-1-2-768x512.jpg" alt="Picture of showroom">
       </div>
 
       <div class="infoShowroom">
@@ -168,7 +168,7 @@
       "selectedShowroom",
       JSON.stringify(selectedShowroom[0])
     );
-    location.href = "https://pknar.github.io/SKW/singleShowroom.html";
+    location.href = "/singleShowroom.html";
   }
 
   afspraakBtns.forEach((btn) => {

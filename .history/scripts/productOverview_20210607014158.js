@@ -26,23 +26,23 @@
         <div class='flex-row'>
   
             <ul>
-                <li> <img src="https://pknar.github.io/SKW/assets/icons/productOverview/check-mark.png" />1e klas Nordisch Fichte hout</li>
-                <li><img src="https://pknar.github.io/SKW/assets/icons/productOverview/check-mark.png" />1 espen leuning</li>
-                <li><img src="https://pknar.github.io/SKW/assets/icons/productOverview/check-mark.png" />Deur van brons thermoglas</li>
+                <li> <img src="../assets/icons/productOverview/check-mark.png" />1e klas Nordisch Fichte hout</li>
+                <li><img src="../assets/icons/productOverview/check-mark.png" />1 espen leuning</li>
+                <li><img src="../assets/icons/productOverview/check-mark.png" />Deur van brons thermoglas</li>
   
             </ul>
             <ul>
-                <li><img src="https://pknar.github.io/SKW/assets/icons/productOverview/check-mark.png" />Maatwerk mogelijk</li>
-                <li><img src="https://pknar.github.io/SKW/assets/icons/productOverview/check-mark.png" />1 binnenvloerrooster</li>
-                <li><img src="https://pknar.github.io/SKW/assets/icons/productOverview/check-mark.png" />Lamp met lampenscherm</li>
+                <li><img src="../assets/icons/productOverview/check-mark.png" />Maatwerk mogelijk</li>
+                <li><img src="../assets/icons/productOverview/check-mark.png" />1 binnenvloerrooster</li>
+                <li><img src="../assets/icons/productOverview/check-mark.png" />Lamp met lampenscherm</li>
   
             </ul>
         </div>
   
     </div>
     <div class="buttons">
-        <button class="black-btn"><img src ="https://pknar.github.io/SKW/assets/icons/productOverview/shopping-bag.png" />In Winkelwagen</button>
-        <button class='transparent'> <img src ="https://pknar.github.io/SKW/assets/icons/productOverview/pin(1).png" />Maak een afspraak met een expert</button>
+        <button class="black-btn"><img src ="../assets/icons/productOverview/shopping-bag.png" />In Winkelwagen</button>
+        <button class='transparent'> <img src ="../assets/icons/productOverview/pin(1).png" />Maak een afspraak met een expert</button>
     </div>
   
   </div>`;

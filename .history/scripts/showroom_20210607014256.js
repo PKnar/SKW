@@ -168,7 +168,7 @@
       "selectedShowroom",
       JSON.stringify(selectedShowroom[0])
     );
-    location.href = "https://pknar.github.io/SKW/singleShowroom.html";
+    location.href = "/singleShowroom.html";
   }
 
   afspraakBtns.forEach((btn) => {

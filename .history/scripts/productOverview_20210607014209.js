@@ -41,8 +41,8 @@
   
     </div>
     <div class="buttons">
-        <button class="black-btn"><img src ="https://pknar.github.io/SKW/assets/icons/productOverview/shopping-bag.png" />In Winkelwagen</button>
-        <button class='transparent'> <img src ="https://pknar.github.io/SKW/assets/icons/productOverview/pin(1).png" />Maak een afspraak met een expert</button>
+        <button class="black-btn"><img src ="../assets/icons/productOverview/shopping-bag.png" />In Winkelwagen</button>
+        <button class='transparent'> <img src ="../assets/icons/productOverview/pin(1).png" />Maak een afspraak met een expert</button>
     </div>
   
   </div>`;
