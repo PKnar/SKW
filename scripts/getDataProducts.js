@@ -84,7 +84,9 @@
 
         productsList.appendChild(card);
 
-        card.addEventListener("click", (e) => clickedProduct(product));
+        card.addEventListener("click", (e) =>
+          clickedProduct(product, `${randomNumber}.jpg`)
+        );
       });
     }
   }
@@ -132,6 +134,12 @@
   });
 
   function clickedProduct(product, image) {
-    // location.href = "/product.html";
+    location.href = "/product.html";
+    let selectedproduct = {
+      product,
+      image,
+    };
+
+    localStorage.setItem("selectedProduct", JSON.stringify(selectedproduct));
   }
 })();

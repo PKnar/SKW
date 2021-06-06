@@ -52,7 +52,7 @@
     navigation.map((link) => {
       let li = document.createElement("li");
       let a = document.createElement("a");
-      a.setAttribute("href", `${baseURL}/${link.path}`);
+      a.setAttribute("href", `/${link.path}`);
       li.setAttribute("id", `${link.name.toLowerCase()}`);
       li.setAttribute("class", `link`);
       a.innerHTML = link.name;
@@ -82,14 +82,14 @@
               </div>
   
               <ul class="nav-links close ">
-                  <li class='link' id="homeM"><a  href="${baseURL}/index.html">Home </a></li>
-                  <li  class='link' id="actiesM"><a href="${baseURL}/acties.html">Acties </a></li>
-                  <li class='link' id="webshopM" ><a href="${baseURL}/webshop.html">Webshop </a></li>
-                  <li  class='link' id="showroomsM" ><a href="${baseURL}/showrooms.html">Showrooms </a></li>
-                  <li  class='link' id="blogM" ><a href="${baseURL}/blogs.html">Blog </a></li>
-                  <li class='link' id="aboutM" ><a href="${baseURL}/about.html">About </a></li>
-                  <li class='link' id="contactM"  ><a href="${baseURL}/contact.html">Contact </a></li>
-                  <li class='link' id="refM"  ><a href="${baseURL}/references.html">References</a></li>
+                  <li class='link' id="homeM"><a  href="/index.html">Home </a></li>
+                  <li  class='link' id="actiesM"><a href="/acties.html">Acties </a></li>
+                  <li class='link' id="webshopM" ><a href="/webshop.html">Webshop </a></li>
+                  <li  class='link' id="showroomsM" ><a href="/showrooms.html">Showrooms </a></li>
+                  <li  class='link' id="blogM" ><a href="/blogs.html">Blog </a></li>
+                  <li class='link' id="aboutM" ><a href="/about.html">About </a></li>
+                  <li class='link' id="contactM"  ><a href="/contact.html">Contact </a></li>
+                  <li class='link' id="refM"  ><a href="/references.html">References</a></li>
                   <li class='link'><a href="#">Wij verkopen ook</a></li>
               </ul>
   

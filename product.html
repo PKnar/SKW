@@ -21,74 +21,30 @@
     <main>
         <nav></nav>
     </main>
-    <header>
-        <div class="product">
-
-            <img src='./assets/images/homepage/barrel.png'>
-
-        </div>
-        <div class="product-info-card">
-
-            <h2> BINNENSAUNA SK100</h2>
-            <div class="flex-row ">
-                <p>3 plaatsen</p>
-                <div class="vertical-line"></div>
-                <p>130 x 100 x 203 cm</p>
-            </div>
-            <hr>
-            <div class="flex-row">
-                <h3>€2.260,00</h3>
-                <img />
-            </div>
-            <hr>
-            <div>
-                <h4>Details</h4>
-                <div class='flex-row'>
-
-                    <ul>
-                        <li>1e klas Nordisch Fichte hout</li>
-                        <li>1 espen leuning</li>
-                        <li>Deur van brons thermoglas</li>
-
-                    </ul>
-                    <ul>
-                        <li>Maatwerk mogelijk</li>
-                        <li>1 binnenvloerrooster</li>
-                        <li>Lamp met lampenscherm</li>
-
-                    </ul>
-                </div>
-
-            </div>
-            <div class="buttons">
-                <button class="black-btn">In Winkelwagen</button>
-                <button class='transparent'>Maak een afspraak met een expert</button>
-            </div>
-
-        </div>
+    <header class="bright pOverview">
 
     </header>
     <section class="info-section">
         <ul class="cards">
-            <li>Stel een vraag <br />
+            <li><img src="../assets/icons/productOverview/question.png" />Stel een vraag <br />
                 over dit product</li>
-            <li>Maak een afspraak <br />
+            <li><img src="../assets/icons/productOverview/pin(1).png" />Maak een afspraak <br />
                 In onze showroom</li>
-            <li>Bekijk Brochure <br />
+            <li><img src="../assets/icons/productOverview/cloud.png" />Bekijk Brochure <br />
                 Onze sauna collectie </li>
         </ul>
 
         <div class="section-menu-wrapper">
             <ul class="menu">
 
-                <li>Informatie</li>
-                <li>Constructie</li>
-                <li>Techologie</li>
-                <li>Werking</li>
-                <li>Extra optie</li>
+                <li class="menu-link">Informatie</li>
+                <li class="active-sub-link  menu-link">Constructie</li>
+                <li class="menu-link">Techologie</li>
+                <li class="menu-link">Werking</li>
+                <li class="menu-link">Extra optie</li>
             </ul>
             <div class="info-container">
-                <div class="flex-row">
+                <div class="flex-row info-row">
                     <div class="detail">
                         <h4>Build to last</h4>
                         <p>De sauna’s van Healthvision zijn Build-to-last, gebouwd van dusdanige kwaliteit dat ze een
@@ -96,17 +52,20 @@
                             en een slim doordachte constructie. Als u investeert in Healthvision, heeft u daar dus de
                             rest van uw leven plezier va</p>
                     </div>
-                    <img alt='logo' />
+                    <img src="../assets/icons/productOverview/built.png" />
 
                 </div>
-                <div class="flex-row">
-                    <img alt='logo' />
+                <div class="flex-row info-row">
+                    <img src="../assets/icons/productOverview/fsc.png" />
                     <div class="detail">
-                        <h4>Build to last</h4>
-                        <p>De sauna’s van Healthvision zijn Build-to-last, gebouwd van dusdanige kwaliteit dat ze een
-                            leven lang mee gaan. Robuuste, stevige banken, uitsluitend gebruik van hoogwaardig materiaal
-                            en een slim doordachte constructie. Als u investeert in Healthvision, heeft u daar dus de
-                            rest van uw leven plezier va</p>
+                        <h4> Eerste klas Canadees Red Cedar hout</h4>
+                        <p>
+                            Het geeft die heerlijke, typische saunageur, werkt anti-bacterieel, kan perfect tegen vocht
+                            en dus ook vochtige ruimtes zoals badkamers, plus het weerkaatst infraroodstraling. Een
+                            betere houtsoort voor een infrarood sauna is er niet! Alle Enjoy Life sauna's zijn standaard
+                            van Red Cedar, heerlijke luxe dus!
+
+                        </p>
                     </div>
 
 
@@ -198,17 +157,7 @@
                 <h3>BEZOEK ONZE <br> <span class="accent-dark">SHOWROOMS</span></h3>
                 <p>Altijd een showroom dichtbij</p>
 
-                <ul>
-
-
-                    <li><a href='#'>Waalre</a></li>
-                    <li><a href='#'> Amersfoort</a></li>
-                    <li><a href='#'> Alphen a/d Rijn</a></li>
-                    <li><a href='#'> Wijchen</a></li>
-                    <li><a href='#'> Zeeland</a></li>
-                    <li><a href='#'> Zandhoven</a></li>
-                    <li><a href='#'> Waregem</a></li>
-                    <li><a href='#'> Genk</a></li>
+                <ul class="showrooms-menu">
 
                 </ul>
 
@@ -236,8 +185,8 @@
     <script src="scripts/animations.js"></script>
     <script src='scripts/script.js'></script>
     <script src='scripts/getData.js'></script>
-
-
+    <script src='scripts/productOverview.js'></script>
+    <script src="scripts/map.js"></script>
 
 
 

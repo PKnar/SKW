@@ -34,8 +34,17 @@ header {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
+body p,
+section li {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
 button {
   cursor: pointer;
+}
+
+.showrooms-menu li {
+  font-family: "Montserrat", sans-serif;
 }
 
 /* nav */
