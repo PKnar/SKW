@@ -41,18 +41,16 @@ function main() {
 
   let next = document.querySelector(".next");
   let prev = document.querySelector(".prev");
-  let isButtonClicked = false;
 
-  //   let interval = setInterval(() => nexSlide(1), 3000);
-  // }
+  let interval = setInterval(() => nexSlide(1, "next"), 3000);
 
   showSlides(slideIndex);
 
-  function nexSlide(n) {
-    showSlides((slideIndex += n));
+  function nexSlide(n, currentButton) {
+    showSlides((slideIndex += n), currentButton);
   }
 
-  function showSlides(n) {
+  function showSlides(n, currentButton) {
     var i;
     var slides = document.querySelectorAll(".review");
 
@@ -65,22 +63,24 @@ function main() {
     for (i = 0; i < slides.length; i++) {
       slides[i].style.display = "none";
     }
-    slides[slideIndex - 1].style = " animation: slideLeft 2s forwards";
+
+    if (currentButton == "next") {
+      slides[slideIndex - 1].style = " animation: slideLeft 2s forwards";
+    } else {
+      slides[slideIndex - 1].style = " animation: slideRight 2s forwards";
+    }
+
     slides[slideIndex - 1].style.display = "block";
   }
 
   prev.addEventListener("click", (e) => {
-    isButtonClicked = true;
-    nexSlide(-1);
+    clearInterval(interval);
+    nexSlide(-1, "prev");
   });
   next.addEventListener("click", (e) => {
-    isButtonClicked = true;
-    nexSlide(1);
+    clearInterval(interval);
+    nexSlide(1, "next");
   });
-
-  // if (!isButtonClicked) {
-  //   interval = ;
-  // }
 }
 
 window.addEventListener("load", main);
