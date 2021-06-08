@@ -226,6 +226,7 @@ hr {
   background-color: var(--headerBackgroundColor);
   color: white;
   padding-top: 4rem;
+  overflow-y: hidden;
   position: relative;
 }
 
@@ -243,8 +244,17 @@ hr {
       rgba(7, 7, 7, 0.5)
     ),
     url("../assets/images/homepage/binnenSauna.jpg");
-  transform: translateY(80px);
-  opacity: 0;
+  margin-top: 80px;
+  transition: all 1s;
+}
+
+.a1:hover {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(3, 3, 3, 0.6),
+      rgba(7, 7, 7, 0.6)
+    ),
+    url("../assets/images/homepage/binnenSauna.jpg");
 }
 
 .a2 {
@@ -254,8 +264,19 @@ hr {
       rgba(7, 7, 7, 0.5)
     ),
     url("../assets/images/homepage/sauna.jpg");
-  transform: translateY(120px);
+  margin-top: 120px;
   opacity: 0;
+  transition: 1s;
+}
+
+.a2:hover {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(3, 3, 3, 0.6),
+      rgba(7, 7, 7, 0.6)
+    ),
+    url("../assets/images/homepage/sauna.jpg");
+  transition: 1s;
 }
 
 .a3 {
@@ -265,9 +286,20 @@ hr {
       rgba(7, 7, 7, 0.5)
     ),
     url("../assets/images/homepage/Infrarood.jpg");
-  transform: translateY(160px);
+  margin-top: 160px;
   opacity: 0;
+  transition: 1s;
 }
+
+.a3:hover {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(3, 3, 3, 0.6),
+      rgba(7, 7, 7, 0.6)
+    ),
+    url("../assets/images/homepage/Infrarood.jpg");
+}
+
 .a4 {
   background-image: linear-gradient(
       to bottom,
@@ -275,8 +307,18 @@ hr {
       rgba(7, 7, 7, 0.5)
     ),
     url("../assets/images/homepage/barrel.png");
-  transform: translateY(200px);
+  margin-top: 200px;
   opacity: 0;
+  transition: 1s;
+}
+
+.a4:hover {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(3, 3, 3, 0.6),
+      rgba(7, 7, 7, 0.6)
+    ),
+    url("../assets/images/homepage/barrel.png");
 }
 
 .assortiment {
@@ -288,6 +330,11 @@ hr {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.assortiment:hover {
+  transform: scale(1.05);
+  transition: 1s;
 }
 
 .assortiment button {
@@ -661,7 +708,7 @@ button a {
 
 @keyframes slideUp {
   to {
-    transform: translateY(0);
+    margin-top: 0;
     opacity: 1;
     transition: 1s;
   }

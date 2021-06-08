@@ -42,7 +42,7 @@ function main() {
   let next = document.querySelector(".next");
   let prev = document.querySelector(".prev");
 
-  let interval = setInterval(() => nexSlide(1, "next"), 3000);
+  let interval = setInterval(() => nexSlide(1, "next"), 5000);
 
   showSlides(slideIndex);
 
