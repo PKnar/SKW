@@ -146,6 +146,12 @@ header img {
   font-weight: 500;
 }
 
+.cards li a {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
 .cards li img {
   width: 30px;
   margin-right: 2rem;

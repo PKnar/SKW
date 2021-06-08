@@ -37,6 +37,12 @@ header {
 
 .textContent p {
   color: rgb(153, 153, 153);
+  margin-bottom: 1rem;
+}
+
+.textContent a {
+  text-decoration: none;
+  color: var(--accentBright);
 }
 
 /*Overlay Box*/
@@ -240,44 +246,44 @@ header {
   flex-direction: row;
 }
 
-
 @media (max-width: 500px) {
   h1 {
     font-size: 1.5rem;
   }
 
-  .textContent  {
+  .textContent {
     font-size: 1rem;
     width: 300px;
     padding-left: 2rem;
   }
 
-  .overlayBox h1, span, li{
+  .overlayBox h1,
+  span,
+  li {
     font-size: 13px;
   }
 
-  .rightPart{
+  .rightPart {
     display: none;
   }
 
-  .showroomContainer{
+  .showroomContainer {
     display: flex;
     flex-direction: column;
     height: 100%;
   }
-  
-  .showroomContainer img{
-    padding-right: 1.8rem;
-   }
 
-  .infoShowroom{
+  .showroomContainer img {
+    padding-right: 1.8rem;
+  }
+
+  .infoShowroom {
     border-right: none;
   }
 
-  .hourAppointment{
+  .hourAppointment {
     padding-bottom: 3rem;
   }
-
 }
 
 @media (max-width: 800px) {
@@ -285,38 +291,39 @@ header {
     font-size: 1.5rem;
   }
 
-  .textContent  {
+  .textContent {
     font-size: 1rem;
     width: 300px;
     padding-left: 2rem;
   }
 
-  .overlayBox h1, span, li{
+  .overlayBox h1,
+  span,
+  li {
     font-size: 13px;
   }
 
-  .rightPart{
+  .rightPart {
     display: none;
   }
 
-  .showroomContainer{
+  .showroomContainer {
     display: flex;
     flex-direction: column;
     height: 100%;
   }
 
-  .showroomContainer img{
+  .showroomContainer img {
     padding-right: 1.8rem;
-   }
+  }
 
-  .infoShowroom{
+  .infoShowroom {
     border-right: none;
   }
 
-  .hourAppointment{
+  .hourAppointment {
     padding-bottom: 3rem;
   }
-
 }
 
 @media (max-width: 1200px) {
@@ -324,35 +331,33 @@ header {
     font-size: 1.5rem;
   }
 
-  .textContent  {
+  .textContent {
     font-size: 1rem;
     width: 300px;
     padding-left: 2rem;
   }
 
-  .overlayBox h1, span, li{
+  .overlayBox h1,
+  span,
+  li {
     font-size: 13px;
   }
 
-  .showroomContainer img{
+  .showroomContainer img {
     padding-right: 1.8rem;
-   }
+  }
 
-  .showroomContainer{
+  .showroomContainer {
     display: flex;
     flex-direction: column;
     height: 100%;
   }
 
-  .infoShowroom{
+  .infoShowroom {
     border-right: none;
   }
 
-  .hourAppointment{
+  .hourAppointment {
     padding-bottom: 3rem;
   }
-
 }
-
-
-
