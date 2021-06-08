@@ -93,44 +93,38 @@
 
   /* mini navbar */
 
-  let alle = document.querySelector("#alle");
-  let binnen = document.querySelector("#binnen");
-  let buiten = document.querySelector("#buiten");
-  let maarwerk = document.querySelector("#maatwerk");
-
   function generate(activeCategory, arr) {
     activeCategory.classList.add("active");
     arr.forEach((el) => el.classList.remove("active"));
   }
 
-  binnen.addEventListener("click", (e) => {
-    generate(binnen, [alle, buiten, maarwerk]);
-    currentActiveLink = "binnen";
-    generateProducts("binnen", currentSort);
-    populateFilter("binnen");
-  });
-  alle.addEventListener("click", (e) => {
-    generate(alle, [binnen, buiten, maarwerk]);
-    currentActiveLink = "alle";
-    generateProducts("alle", currentSort);
-  });
+  const categories = Array.from(document.querySelectorAll(".category"));
 
-  buiten.addEventListener("click", (e) => {
-    generate(buiten, [alle, binnen, maarwerk]);
-    currentActiveLink = "buiten";
-    generateProducts("buiten", currentSort);
-    populateFilter("buiten");
-  });
-  maatwerk.addEventListener("click", (e) => {
-    generate(maatwerk, [alle, buiten, buiten]);
-    currentActiveLink = "maatwerk";
-    generateProducts("maatwerk", currentSort);
-  });
+  function handleClick(e) {
+    categories.forEach((category) => {
+      category.classList.remove("active");
+    });
+
+    e.target.classList.add("active");
+    currentActiveLink = e.target.id;
+    generateProducts(currentActiveLink, currentSort);
+    //populateFilter("binnen");
+  }
+
+  categories.forEach((category) =>
+    category.addEventListener("click", (e) => handleClick(e))
+  );
 
   window.addEventListener("load", (e) => {
-    currentActiveLink = "alle";
+    currentActiveLink =
+      JSON.parse(localStorage.getItem("chosenCategory")) || "alle";
 
-    generateProducts("alle", currentSort);
+    categories.forEach((cat) => cat.classList.remove("active"));
+
+    let currentCat = categories.find((cat) => cat.id === currentActiveLink);
+    currentCat.classList.add("active");
+
+    generateProducts(currentActiveLink, currentSort);
   });
 
   function clickedProduct(product, image) {

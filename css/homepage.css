@@ -234,6 +234,11 @@ hr {
   position: relative;
 }
 
+#alle {
+  color: var(--accentBright);
+  text-decoration: none;
+}
+
 .assortiments {
   width: 100%;
   display: flex;

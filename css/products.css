@@ -18,7 +18,7 @@ nav ul a {
 }
 
 header {
-  height: 100vh;
+  height: 70vh;
   width: 100%;
   display: flex;
   overflow: hidden;
@@ -26,7 +26,7 @@ header {
 
 .hero {
   height: 100vh;
-  width: 50%;
+  width: 60%;
   display: flex;
   justify-content: center;
   text-align: left;
@@ -47,25 +47,21 @@ header {
 .hero p {
   width: 100%;
   text-align: left;
-  color: rgb(185, 179, 179);
+  color: rgb(148, 147, 147);
   font-size: 1.2rem;
 }
 
 .bg-image {
   width: 50%;
-  height: 100vh;
-  display: flex;
-  padding: 2rem;
+  padding: 3rem;
 }
 
 .box {
-  width: 180px;
-  margin: 0.5rem;
-  overflow: hidden;
-  margin-top: 100px;
-  background-size: cover;
+  width: 55%;
+  margin-left: 3rem;
+  margin-top: 8rem;
 }
-
+/* 
 .middle-box {
   background-image: url(../assets/images/products/middle-side.jpg);
   background-position: bottom;
@@ -79,7 +75,7 @@ header {
 .right-box {
   background-image: url(../assets/images/products/right-side.png);
   background-position: center;
-}
+} */
 
 /* rpoducts section */
 

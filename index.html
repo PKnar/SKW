@@ -141,7 +141,7 @@
         <hr />
 
         <div class="svg-wrapper">
-            <p> Alle producten </p>
+            <p> <a id='alle' class="category" href="/products.html">Alle Producten</a> </p>
             <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 74.63 21.44">
                 <defs>
                     <style>
@@ -174,19 +174,23 @@
         <div class="assortiments">
             <div class="assortiment a1">
                 <p>Binnensauna's</p>
-                <button> <a href="https://pknar.github.io/SKW/products.html">Shop</a></button>
+                <button> <a id='binnen' class="category"
+                        href="https://pknar.github.io/SKW/products.html">Shop</a></button>
             </div>
             <div class="assortiment a2">
                 <p>Buitensauna's</p>
-                <button> <a href="https://pknar.github.io/SKW/products.html">Shop</a></button>
+                <button> <a id='buiten' class="category"
+                        href="https://pknar.github.io/SKW/products.html">Shop</a></button>
             </div>
             <div class="assortiment a3">
-                <p>Infrarood sauna's</p>
-                <button> <a href="https://pknar.github.io/SKW/products.html">Shop</a></button>
+                <p> Infrarood sauna's</p>
+                <button> <a id='infrarood' class="category"
+                        href="https://pknar.github.io/SKW/products.html">Shop</a></button>
             </div>
             <div class="assortiment a4">
                 <p>Barrel sauna's</p>
-                <button> <a href="https://pknar.github.io/SKW/products.html">Shop</a></button>
+                <button> <a id='barrel' class="category"
+                        href="https://pknar.github.io/SKW/products.html">Shop</a></button>
             </div>
         </div>
     </section>
@@ -285,6 +289,14 @@
     <script src='scripts/script.js'></script>
     <script src='scripts/getData.js'></script>
     <script src='scripts/map.js'></script>
+    <script>
+        let categories = document.querySelectorAll('.category');
+        categories.forEach(category => {
+            category.addEventListener('click', (e) => {
+                localStorage.setItem('chosenCategory', JSON.stringify(e.target.id))
+            })
+        })
+    </script>
 
 
 
