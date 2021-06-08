@@ -253,6 +253,7 @@ select {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-top: 150px;
 }
 
 .showrooms .meer {
@@ -275,8 +276,9 @@ select {
 .map-section {
   display: flex;
   justify-content: space-around;
-  margin-top: 200px;
+  margin-top: 7rem;
   min-height: 100vh;
+  background-color: var(--headerBackgroundColor);
 }
 #map {
   width: 50%;
@@ -286,13 +288,17 @@ select {
 }
 
 #map img {
-  width: 70%;
+  width: 80%;
 }
 
 .meer {
   display: flex;
   align-items: center;
   cursor: pointer;
+}
+
+.blog-post .meer {
+  margin-top: 2.5rem;
 }
 
 .meer a {

@@ -245,6 +245,7 @@ header img {
 }
 
 /* Map Section */
+/* Map Section */
 
 .accent-dark {
   color: #988172;
@@ -265,6 +266,7 @@ header img {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-top: 150px;
 }
 
 .showrooms .meer {
@@ -287,8 +289,9 @@ header img {
 .map-section {
   display: flex;
   justify-content: space-around;
-  margin-top: 200px;
+  margin-top: 7rem;
   min-height: 100vh;
+  background-color: var(--headerBackgroundColor);
 }
 #map {
   width: 50%;
@@ -298,13 +301,17 @@ header img {
 }
 
 #map img {
-  width: 70%;
+  width: 80%;
 }
 
 .meer {
   display: flex;
   align-items: center;
   cursor: pointer;
+}
+
+.blog-post .meer {
+  margin-top: 2.5rem;
 }
 
 .meer a {
@@ -317,7 +324,6 @@ header img {
   height: 10px;
   margin-left: 1rem;
 }
-
 /* circles */
 
 .circles {
