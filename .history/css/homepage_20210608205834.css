@@ -316,11 +316,9 @@ hr {
   align-self: flex-start;
 }
 
-.products-section .svg-wrapper a {
+.products-section .svg-wrapper p {
   width: 250px;
   cursor: pointer;
-  color: var(--accentBright);
-  text-decoration: none;
 }
 
 .products-section .svg-wrapper svg {
@@ -816,4 +814,9 @@ button a {
 
 .circles .transparent {
   border-color: transparent;
+}
+
+#alle {
+  color: var(--accentBright);
+  text-decoration: none;
 }

@@ -234,6 +234,11 @@ hr {
   position: relative;
 }
 
+#alle {
+  color: var(--accentBright);
+  text-decoration: none;
+}
+
 .assortiments {
   width: 100%;
   display: flex;
@@ -316,11 +321,9 @@ hr {
   align-self: flex-start;
 }
 
-.products-section .svg-wrapper a {
+.products-section .svg-wrapper p {
   width: 250px;
   cursor: pointer;
-  color: var(--accentBright);
-  text-decoration: none;
 }
 
 .products-section .svg-wrapper svg {

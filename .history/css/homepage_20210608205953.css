@@ -316,7 +316,7 @@ hr {
   align-self: flex-start;
 }
 
-.products-section .svg-wrapper a {
+.products-section .svg-wrapper p {
   width: 250px;
   cursor: pointer;
   color: var(--accentBright);
