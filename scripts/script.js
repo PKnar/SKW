@@ -37,50 +37,53 @@ function main() {
 
   /* slideshow*/
 
-  let slideIndex = 1;
+  let slides = document.querySelectorAll(".review");
 
-  let next = document.querySelector(".next");
-  let prev = document.querySelector(".prev");
+  if (slides) {
+    let slideIndex = 1;
 
-  let interval = setInterval(() => nexSlide(1, "next"), 5000);
+    let next = document.querySelector(".next");
+    let prev = document.querySelector(".prev");
 
-  showSlides(slideIndex);
+    let interval = setInterval(() => nexSlide(1, "next"), 5000);
 
-  function nexSlide(n, currentButton) {
-    showSlides((slideIndex += n), currentButton);
+    showSlides(slideIndex);
+
+    function nexSlide(n, currentButton) {
+      showSlides((slideIndex += n), currentButton);
+    }
+
+    function showSlides(n, currentButton) {
+      let i;
+
+      if (n > slides.length) {
+        slideIndex = 1;
+      }
+      if (n < 1) {
+        slideIndex = slides.length;
+      }
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+
+      if (currentButton == "next") {
+        slides[slideIndex - 1].style = " animation: slideLeft 2s forwards";
+      } else {
+        slides[slideIndex - 1].style = " animation: slideRight 2s forwards";
+      }
+
+      slides[slideIndex - 1].style.display = "block";
+    }
+
+    prev.addEventListener("click", (e) => {
+      clearInterval(interval);
+      nexSlide(-1, "prev");
+    });
+    next.addEventListener("click", (e) => {
+      clearInterval(interval);
+      nexSlide(1, "next");
+    });
   }
-
-  function showSlides(n, currentButton) {
-    var i;
-    var slides = document.querySelectorAll(".review");
-
-    if (n > slides.length) {
-      slideIndex = 1;
-    }
-    if (n < 1) {
-      slideIndex = slides.length;
-    }
-    for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";
-    }
-
-    if (currentButton == "next") {
-      slides[slideIndex - 1].style = " animation: slideLeft 2s forwards";
-    } else {
-      slides[slideIndex - 1].style = " animation: slideRight 2s forwards";
-    }
-
-    slides[slideIndex - 1].style.display = "block";
-  }
-
-  prev.addEventListener("click", (e) => {
-    clearInterval(interval);
-    nexSlide(-1, "prev");
-  });
-  next.addEventListener("click", (e) => {
-    clearInterval(interval);
-    nexSlide(1, "next");
-  });
 }
 
 window.addEventListener("load", main);

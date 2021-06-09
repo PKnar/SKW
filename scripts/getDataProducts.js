@@ -5,25 +5,36 @@
   const productsURL = "https://saunakoning.herokuapp.com/api/products";
   let currentActiveLink = "";
   let currentSort = "";
+  let currentFilter = "";
 
   let filter = document.querySelector("#filter");
 
-  let binnenSubs = ["Alle binnen", "Budget", "Combi", "Design", "Traditionele"];
-  let buitenSub = ["Alle buiten", "Barrel", "Traditionele"];
+  let binnenSubs = ["Budget", "Combi", "Design", "Traditionele"];
+  let buitenSub = ["Barrel", "Traditionele"];
 
   function populateFilter(category) {
-    // let filters;
-    // if (category === "binnen") {
-    //   filters = binnenSubs.map((sub) => {
-    //     return `<option>${sub} </option>`;
-    //   });
-    // } else if (category === "buiten") {
-    //   filters = buitenSub.map((sub) => {
-    //     return `<option>${sub} </option>`;
-    //   });
-    //   filter.innerHTML += filters;
-    // }
+    filter.innerHTML = "";
+    let filters;
+    if (category === "binnen") {
+      filters = binnenSubs.map((sub) => {
+        return `<option>${sub} </option>`;
+      });
+    } else if (category === "buiten") {
+      filters = buitenSub.map((sub) => {
+        return `<option>${sub} </option>`;
+      });
+    }
+    filter.innerHTML += `<option selected disabled> Filter </option>`;
+    filter.innerHTML += filters;
   }
+
+  let selectFilter = document.querySelector("#filter");
+
+  selectFilter.addEventListener("change", (e) => {
+    currentFilter = e.target.value.toLowerCase();
+
+    generateProducts(currentActiveLink, currentSort, currentFilter);
+  });
 
   async function getData(url) {
     let response = await fetch(url);
@@ -36,10 +47,11 @@
   sort.addEventListener("change", (e) => {
     let value = e.target.value.toLowerCase();
     currentSort = value;
-    generateProducts(currentActiveLink, value);
+    generateProducts(currentActiveLink, value, currentFilter);
   });
 
-  async function generateProducts(selection, value) {
+  async function generateProducts(selection, value, currentFilter) {
+    console.log(selection, value, currentFilter);
     let products = await getData(productsURL);
     let data = products;
     productsList.innerHTML = "";
@@ -52,12 +64,24 @@
       }
     }
 
-    if (selection === "binnen") {
-      data = products.filter((product) => product.category == "binnen");
-    } else if (selection === "buiten") {
-      data = products.filter((product) => product.category == "buiten");
-    } else if (selection === "maatwerk") {
-      data = products.filter((product) => product.category == "maatwerk");
+    if (currentFilter) {
+      data = data.filter(
+        (product) =>
+          product.subcategory === currentFilter &&
+          product.category == currentActiveLink
+      );
+    }
+
+    if (selection && selection != "alle") {
+      if (currentFilter) {
+        data = products.filter(
+          (product) =>
+            product.category == selection &&
+            product.subcategory == currentFilter
+        );
+      } else {
+        data = products.filter((product) => product.category == selection);
+      }
     } else {
       data = products;
     }
@@ -93,11 +117,6 @@
 
   /* mini navbar */
 
-  function generate(activeCategory, arr) {
-    activeCategory.classList.add("active");
-    arr.forEach((el) => el.classList.remove("active"));
-  }
-
   const categories = Array.from(document.querySelectorAll(".category"));
 
   function handleClick(e) {
@@ -105,10 +124,11 @@
       category.classList.remove("active");
     });
 
+    currentFilter = "";
     e.target.classList.add("active");
     currentActiveLink = e.target.id;
-    generateProducts(currentActiveLink, currentSort);
-    //populateFilter("binnen");
+    generateProducts(currentActiveLink, currentSort, currentFilter);
+    populateFilter(currentActiveLink);
   }
 
   categories.forEach((category) =>
@@ -124,7 +144,8 @@
     let currentCat = categories.find((cat) => cat.id === currentActiveLink);
     currentCat.classList.add("active");
 
-    generateProducts(currentActiveLink, currentSort);
+    generateProducts(currentActiveLink, currentSort, currentFilter);
+    populateFilter(currentActiveLink);
   });
 
   function clickedProduct(product, image) {
