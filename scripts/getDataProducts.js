@@ -51,7 +51,6 @@
   });
 
   async function generateProducts(selection, value, currentFilter) {
-    console.log(selection, value, currentFilter);
     let products = await getData(productsURL);
     let data = products;
     productsList.innerHTML = "";
